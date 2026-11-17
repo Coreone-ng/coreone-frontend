@@ -1,2 +1,9 @@
-.headerArea { background: var(--color-hero); padding-top: 41px; }
-@media (max-width: 767px) { .headerArea { padding-top: 20px; } }
+.headerArea {
+  background: var(--color-hero);
+  padding-top: 41px;
+}
+@media (max-width: 767px) {
+  .headerArea {
+    padding-top: 20px;
+  }
+}

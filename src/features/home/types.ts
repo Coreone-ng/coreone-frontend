@@ -1,4 +1,5 @@
-export type FeatureId = "banking" | "invoicing" | "expenses" | "reports" | "teams" | "tax";
+export type FeatureId =
+  "banking" | "invoicing" | "expenses" | "reports" | "teams" | "tax";
 export type Feature = {
   id: FeatureId;
   label: string;
@@ -10,4 +11,11 @@ export type Feature = {
   desktopCrop?: number;
   mobileCrop?: number;
 };
-export type PricingPlan = { name: string; eyebrow: string; monthly: number; annual: number | null; popular?: boolean; features: readonly string[] };
+export type PricingPlan = {
+  name: string;
+  eyebrow: string;
+  monthly: number;
+  annual: number | null;
+  popular?: boolean;
+  features: readonly string[];
+};

@@ -1,4 +1,33 @@
-.eyebrow { font-size: 16px; line-height: 22px; font-weight: 500; letter-spacing: 1.705px; text-transform: uppercase; color: var(--color-muted); }
-.heading { color: var(--color-ink); font-size: clamp(40px, 5.15vw, 74px); font-weight: 700; letter-spacing: -2.28px; line-height: 76px; text-transform: capitalize; }
-@media (max-width: 1024px) { .heading { line-height: 1.06; letter-spacing: -1.5px; } }
-@media (max-width: 600px) { .heading { font-size: 38px; letter-spacing: -1.2px; } .eyebrow { font-size: 12px; line-height: 20px; letter-spacing: 1.3px; } }
+.eyebrow {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 1.705px;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+.heading {
+  color: var(--color-ink);
+  font-size: clamp(40px, 5.15vw, 74px);
+  font-weight: 700;
+  letter-spacing: -2.28px;
+  line-height: 76px;
+  text-transform: capitalize;
+}
+@media (max-width: 1024px) {
+  .heading {
+    line-height: 1.06;
+    letter-spacing: -1.5px;
+  }
+}
+@media (max-width: 600px) {
+  .heading {
+    font-size: 38px;
+    letter-spacing: -1.2px;
+  }
+  .eyebrow {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+  }
+}

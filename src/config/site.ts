@@ -1,7 +1,8 @@
 /** Set only verified destinations; null deliberately keeps missing integrations unavailable. */
 export const site = {
   name: "CoreOne",
-  description: "Smart, simple accounting for modern businesses. Track invoices, manage expenses, connect your bank accounts and run reports with CoreOne.",
+  description:
+    "Smart, simple accounting for modern businesses. Track invoices, manage expenses, connect your bank accounts and run reports with CoreOne.",
   destinations: {
     signup: null,
     login: null,

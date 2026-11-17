@@ -10,5 +10,21 @@ import { SiteHeader } from "@/components/layout/SiteHeader/SiteHeader";
 import styles from "./page.module.css";
 
 export default function HomePage() {
-  return <><div id="home" className={styles.headerArea}><SiteHeader /></div><main id="main-content"><HeroSection /><FeaturesSection /><ComplianceSection /><SecuritySection /><PricingSection /><TestimonialsSection /><FinalCtaSection /></main><SiteFooter /></>;
+  return (
+    <>
+      <div id="home" className={styles.headerArea}>
+        <SiteHeader />
+      </div>
+      <main id="main-content">
+        <HeroSection />
+        <FeaturesSection />
+        <ComplianceSection />
+        <SecuritySection />
+        <PricingSection />
+        <TestimonialsSection />
+        <FinalCtaSection />
+      </main>
+      <SiteFooter />
+    </>
+  );
 }

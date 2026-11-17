@@ -1,12 +1,84 @@
-.action { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); min-height: 50px; padding: 12px 24px; border: 1px solid transparent; border-radius: var(--radius-pill); font-size: 16px; line-height: 24px; font-weight: 600; white-space: nowrap; }
-.primary { background: var(--color-teal); color: white; }
-.secondary { background: white; color: #414651; border-color: var(--color-control-border); box-shadow: 0 1px 2px rgb(16 24 40 / 5%), inset 0 -2px 0 rgb(10 13 18 / 5%); }
-.text { background: transparent; color: inherit; padding: 8px 0; min-height: 44px; border: 0; border-radius: 4px; font-weight: inherit; font-size: inherit; line-height: inherit; }
-.arrow { flex: 0 0 14px; }
-.dialog { width: min(440px, calc(100% - 40px)); border: 1px solid var(--color-border); border-radius: var(--radius-card); padding: 32px; color: var(--color-ink); box-shadow: var(--shadow-card); }
-.dialog::backdrop { background: rgb(10 19 43 / 45%); }
-.dialog h2 { font-size: 26px; }
-.dialog p { color: var(--color-body); line-height: 1.6; margin: 16px 0 24px; }
-.dialog p a { text-decoration: underline; overflow-wrap: anywhere; }
-@media (hover: hover) { .primary:hover { background: var(--color-teal-hover); } .secondary:hover { background: #f8fafb; } .text:hover { text-decoration: underline; } }
-@media (prefers-reduced-motion: no-preference) { .action { transition: background-color 150ms ease-out, transform 150ms ease-out; } .action:active { transform: scale(.96); } }
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 50px;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.primary {
+  background: var(--color-teal);
+  color: white;
+}
+.secondary {
+  background: white;
+  color: #414651;
+  border-color: var(--color-control-border);
+  box-shadow:
+    0 1px 2px rgb(16 24 40 / 5%),
+    inset 0 -2px 0 rgb(10 13 18 / 5%);
+}
+.text {
+  background: transparent;
+  color: inherit;
+  padding: 8px 0;
+  min-height: 44px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.arrow {
+  flex: 0 0 14px;
+}
+.dialog {
+  width: min(440px, calc(100% - 40px));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 32px;
+  color: var(--color-ink);
+  box-shadow: var(--shadow-card);
+}
+.dialog::backdrop {
+  background: rgb(10 19 43 / 45%);
+}
+.dialog h2 {
+  font-size: 26px;
+}
+.dialog p {
+  color: var(--color-body);
+  line-height: 1.6;
+  margin: 16px 0 24px;
+}
+.dialog p a {
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+@media (hover: hover) {
+  .primary:hover {
+    background: var(--color-teal-hover);
+  }
+  .secondary:hover {
+    background: #f8fafb;
+  }
+  .text:hover {
+    text-decoration: underline;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .action {
+    transition:
+      background-color 150ms ease-out,
+      transform 150ms ease-out;
+  }
+  .action:active {
+    transform: scale(0.96);
+  }
+}

@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   applicationName: site.name,
   robots: { index: false, follow: false },
 };
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body><a href="#main-content" className="skip-link">Skip to main content</a>{children}</body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
+        {children}
+      </body>
+    </html>
+  );
 }

@@ -16,7 +16,8 @@
   --radius-pill: 9999px;
   --radius-card: 16px;
   --radius-panel: 25px;
-  --shadow-card: 0 8px 10px -4px rgb(16 24 40 / 8%), 0 3px 6px -2px rgb(16 24 40 / 4%);
+  --shadow-card:
+    0 8px 10px -4px rgb(16 24 40 / 8%), 0 3px 6px -2px rgb(16 24 40 / 4%);
   --shadow-device: 0 10px 14px rgb(10 13 18 / 8%), 0 3px 5px rgb(10 13 18 / 3%);
   --space-1: 4px;
   --space-2: 8px;

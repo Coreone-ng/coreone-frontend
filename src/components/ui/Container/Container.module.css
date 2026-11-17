@@ -1,3 +1,14 @@
-.container { width: min(var(--container), calc(100% - 64px)); margin-inline: auto; }
-@media (max-width: 600px) { .container { width: calc(100% - 40px); } }
-@media (max-width: 360px) { .container { width: calc(100% - 32px); } }
+.container {
+  width: min(var(--container), calc(100% - 64px));
+  margin-inline: auto;
+}
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+}

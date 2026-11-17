@@ -1,17 +1,118 @@
-.section { padding: 137px 0; overflow: clip; }
-.container { max-width: 1277px; width: calc(100% - 64px); margin: auto; }
-.heading { max-width: 920px; margin: auto; text-align: center; }
-.heading h2 { font-size: 64px; line-height: 76px; margin-top: 41px; }
-.stories { position: relative; height: 426px; margin-top: 65px; }
-.stories > div { position: absolute; border: 2px solid #e8efec; background: #7f7f7f; border-radius: 20px; }
-.outerLeft, .outerRight { width: 22.36%; aspect-ratio: 1; top: 20%; }
-.outerLeft { left: 3%; transform: rotate(-16deg); }
-.outerRight { right: 3%; transform: rotate(16deg); }
-.innerLeft, .innerRight { width: 28%; aspect-ratio: 1; top: 13%; }
-.innerLeft { left: 17.7%; transform: rotate(-8deg); }
-.innerRight { right: 17.7%; transform: rotate(8deg); }
-.stories .center { width: 32.88%; aspect-ratio: 1; left: 33.56%; top: 0; background: #c4c4c4; border-color: #b4ef5b; z-index: 1; display: grid; place-items: center; }
-.play { padding: 16px; border-radius: 50%; }
-@media (max-width: 1250px) { .stories { height: min(36vw, 426px); } .heading h2 { font-size: 56px; line-height: 1.15; } }
-@media (max-width: 900px) { .section { padding: 80px 0; } .heading h2 { font-size: 44px; margin-top: 28px; } .stories { margin-top: 48px; } }
-@media (max-width: 600px) { .container { width: calc(100% - 40px); } .section { padding: 64px 0 80px; } .heading h2 { font-size: 36px; } .stories { width: 140%; margin-left: -20%; height: 48vw; margin-top: 40px; } .stories > div { border-radius: 12px; } .play img { width: 56px; height: 56px; } }
+.section {
+  padding: 137px 0;
+  overflow: clip;
+}
+.container {
+  max-width: 1277px;
+  width: calc(100% - 64px);
+  margin: auto;
+}
+.heading {
+  max-width: 920px;
+  margin: auto;
+  text-align: center;
+}
+.heading h2 {
+  font-size: 64px;
+  line-height: 76px;
+  margin-top: 41px;
+}
+.stories {
+  position: relative;
+  height: 426px;
+  margin-top: 65px;
+}
+.stories > div {
+  position: absolute;
+  border: 2px solid #e8efec;
+  background: #7f7f7f;
+  border-radius: 20px;
+}
+.outerLeft,
+.outerRight {
+  width: 22.36%;
+  aspect-ratio: 1;
+  top: 20%;
+}
+.outerLeft {
+  left: 3%;
+  transform: rotate(-16deg);
+}
+.outerRight {
+  right: 3%;
+  transform: rotate(16deg);
+}
+.innerLeft,
+.innerRight {
+  width: 28%;
+  aspect-ratio: 1;
+  top: 13%;
+}
+.innerLeft {
+  left: 17.7%;
+  transform: rotate(-8deg);
+}
+.innerRight {
+  right: 17.7%;
+  transform: rotate(8deg);
+}
+.stories .center {
+  width: 32.88%;
+  aspect-ratio: 1;
+  left: 33.56%;
+  top: 0;
+  background: #c4c4c4;
+  border-color: #b4ef5b;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+.play {
+  padding: 16px;
+  border-radius: 50%;
+}
+@media (max-width: 1250px) {
+  .stories {
+    height: min(36vw, 426px);
+  }
+  .heading h2 {
+    font-size: 56px;
+    line-height: 1.15;
+  }
+}
+@media (max-width: 900px) {
+  .section {
+    padding: 80px 0;
+  }
+  .heading h2 {
+    font-size: 44px;
+    margin-top: 28px;
+  }
+  .stories {
+    margin-top: 48px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+  .section {
+    padding: 64px 0 80px;
+  }
+  .heading h2 {
+    font-size: 36px;
+  }
+  .stories {
+    width: 140%;
+    margin-left: -20%;
+    height: 48vw;
+    margin-top: 40px;
+  }
+  .stories > div {
+    border-radius: 12px;
+  }
+  .play img {
+    width: 56px;
+    height: 56px;
+  }
+}
