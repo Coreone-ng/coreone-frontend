@@ -1,0 +1,33 @@
+:root {
+  /* Temporary fallbacks: licensed BR Firma / Clash Grotesk were not supplied. */
+  --font-body: "Avenir Next", "Segoe UI", Arial, sans-serif;
+  --font-badge: "Avenir Next", "Segoe UI", Arial, sans-serif;
+  --color-ink: #0a132b;
+  --color-body: #535862;
+  --color-muted: #667085;
+  --color-teal: #1bb7ac;
+  --color-teal-hover: #148e86;
+  --color-dark: #0a2a29;
+  --color-hero: #f5feff;
+  --color-cyan: #ecfdff;
+  --color-white: #fff;
+  --color-border: #e9eaeb;
+  --color-control-border: #d5d7da;
+  --radius-pill: 9999px;
+  --radius-card: 16px;
+  --radius-panel: 25px;
+  --shadow-card: 0 8px 10px -4px rgb(16 24 40 / 8%), 0 3px 6px -2px rgb(16 24 40 / 4%);
+  --shadow-device: 0 10px 14px rgb(10 13 18 / 8%), 0 3px 5px rgb(10 13 18 / 3%);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-15: 60px;
+  --space-20: 80px;
+  --container: 1216px;
+}

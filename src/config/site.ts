@@ -1,0 +1,26 @@
+/** Set only verified destinations; null deliberately keeps missing integrations unavailable. */
+export const site = {
+  name: "CoreOne",
+  description: "Smart, simple accounting for modern businesses. Track invoices, manage expenses, connect your bank accounts and run reports with CoreOne.",
+  destinations: {
+    signup: null,
+    login: null,
+    demoVideo: null,
+    about: null,
+    blog: null,
+    faqs: null,
+    contact: null,
+    compliance: null,
+    security: null,
+    terms: null,
+    privacy: null,
+    twitter: null,
+    instagram: null,
+    tiktok: null,
+    youtube: null,
+  } satisfies Record<string, string | null>,
+  email: "support@coreone.com",
+  phone: "+1 (306) 552-5767",
+  phoneHref: "tel:+13065525767",
+  address: "123, 5678 Maple Avenue, Saskatoon, Saskatchewan S7K 5N9",
+};
