@@ -6,9 +6,9 @@ import styles from "./SiteFooter.module.css";
 
 const socialLinks = [
   { label: "X (Twitter)", file: "1ebeb.svg", href: site.destinations.twitter },
-  { label: "Instagram", file: "821c3.svg", href: site.destinations.instagram },
-  { label: "TikTok", file: "59717.svg", href: site.destinations.tiktok },
-  { label: "YouTube", file: "87049.svg", href: site.destinations.youtube },
+  { label: "Facebook", file: "821c3.svg", href: site.destinations.facebook },
+  { label: "Instagram", file: "59717.svg", href: site.destinations.instagram },
+  { label: "LinkedIn", file: "87049.svg", href: site.destinations.linkedin },
 ];
 export function SiteFooter() {
   return <footer className={styles.footer}><div className={styles.container}>

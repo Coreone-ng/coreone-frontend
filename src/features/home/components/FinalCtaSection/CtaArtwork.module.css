@@ -77,7 +77,7 @@
 .layer75{position:absolute;display:flex;inset:114.73% 46.69% -40.7% 44.85%;align-items:center;justify-content:center}
 .layer76{flex:none;height:hypot(-96.0485cqw,3.99845cqh);width:hypot(3.95148cqw,96.0016cqh);transform:rotate(87.58deg) skewX(-0.1deg)}
 .layer77{position:absolute;inset:-1.2% -1.23%}
-.layer78{transform:translateX(-50%);position:absolute;bottom:-43px;height:299px;left:calc(50%-113px);width:852px}
+.layer78{transform:translateX(-50%);position:absolute;bottom:-43px;height:299px;left:calc(50% - 113px);width:852px}
 .layer79{position:absolute;inset:-5.35% -1.88%}
 .layer80{position:absolute;display:contents;left:874px;top:27px}
 .layer81{position:absolute;left:874px;width:96px;height:96px;top:27px}
@@ -91,3 +91,6 @@
 .layer89{position:absolute;inset:15.76% 27.47% 78.34% 70.73%}
 .layer90{position:absolute;inset:17.31% 28.5% 77.1% 70.55%}
 @media(max-width:767px){.artwork {width:1280px;height:406px;transform:scale(.65);transform-origin:top left;} }
+
+.artwork > :nth-child(2) { z-index: 2; }
+.artwork > :last-child div { z-index: 2; }

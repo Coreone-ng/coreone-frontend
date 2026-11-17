@@ -1,6 +1,6 @@
 .scene { width: 1100px; height: 700px; position: relative; transform: scale(var(--device-scale, 1)); transform-origin: top left; }
 .desktop, .mobile { position: absolute; background: white; border: 1.7px solid var(--color-control-border); padding: 7px; border-radius: 27px; box-shadow: var(--shadow-device); }
-.desktop { width: 1024px; height: 687.16px; left: 76px; top: 0; }
+.desktop { width: 1024px; height: 687.16px; left: var(--desktop-left, 76px); top: 0; }
 .mobile { width: 280px; height: 592.1px; left: 0; top: 104px; padding: 6px; border-radius: 24px; }
 .desktopScreen, .mobileScreen { position: relative; overflow: hidden; width: 100%; height: 100%; border: 1.6px solid var(--color-border); background: #fafafa; border-radius: 20px; }
 .mobileScreen { border-radius: 18px; }

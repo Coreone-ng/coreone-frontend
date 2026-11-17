@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, type KeyboardEvent } from "react";
+import { useRef, useState, type CSSProperties, type KeyboardEvent } from "react";
 import { features } from "../../data/features";
 import { DeviceMockups } from "../DeviceMockups/DeviceMockups";
 import { Action } from "@/components/ui/Action/Action";
@@ -24,12 +24,12 @@ export function FeatureTabs() {
     <div className={styles.pattern} aria-hidden="true"><img src="/assets/home/1114-214981/da5e6.svg" width={1920} height={1440} alt="" loading="lazy" /><img src="/assets/home/1114-214981/f450c.svg" width={1920} height={1440} alt="" loading="lazy" /></div>
     <div className={styles.selection}>
       <div role="tablist" aria-label="Product features" aria-orientation="vertical" className={styles.tabs}>
-        {features.map((item, index) => <div key={item.id} className={`${styles.tabRow} ${selected === index ? styles.activeRow : ""}`}>
-          <button ref={node => { buttons.current[index] = node; }} type="button" role="tab" id={`tab-${item.id}`} aria-selected={selected === index} aria-controls={`panel-${item.id}`} tabIndex={selected === index ? 0 : -1} className={styles.tab} onKeyDown={event => navigate(event, index)} onClick={() => setSelected(index)}><img src={selected === index ? item.activeIcon ?? item.icon : item.icon} width={24} height={24} alt="" loading="lazy" />{item.label}</button>
+        {features.map((item, index) => <div key={item.id} className={`${styles.tabRow} ${selected === index ? styles.activeRow : ""}`} style={{ gridRow: index + (index > selected ? 2 : 1) }}>
+          <button ref={node => { buttons.current[index] = node; }} type="button" role="tab" id={`tab-${item.id}`} aria-selected={selected === index} aria-describedby={selected === index ? "feature-description" : undefined} aria-controls={`panel-${item.id}`} tabIndex={selected === index ? 0 : -1} className={styles.tab} onKeyDown={event => navigate(event, index)} onClick={() => setSelected(index)}><img src={selected === index ? item.activeIcon ?? item.icon : item.icon} width={24} height={24} alt="" loading="lazy" />{item.label}</button>
         </div>)}
       </div>
-      {/* The selected copy follows the active row visually, without nesting links in a tablist. */}
-      <div className={styles.description} style={{ "--selected-row": selected } as React.CSSProperties}>
+      {/* Grid places the copy after its tab in normal flow, outside the tablist. */}
+      <div id="feature-description" className={styles.description} style={{ gridRow: selected + 2, marginBottom: selected === features.length - 1 ? 0 : undefined } as CSSProperties}>
         <p>{feature.description ?? "Preview unavailable."}</p>
         <Action href={site.destinations.signup}>Try CoreOne Now</Action><div className={styles.progress} aria-hidden="true"><span /></div>
       </div>
