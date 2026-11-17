@@ -1,0 +1,3 @@
+.qr { position: relative; width: 115px; height: 115px; overflow: hidden; border-radius: 8px; }
+.qr span { position: absolute; }
+.qr span img { width: 100%; height: 100%; }
