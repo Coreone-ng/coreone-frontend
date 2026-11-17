@@ -6,7 +6,9 @@ import { PricingSection } from "@/features/home/components/PricingSection/Pricin
 import { TestimonialsSection } from "@/features/home/components/TestimonialsSection/TestimonialsSection";
 import { FinalCtaSection } from "@/features/home/components/FinalCtaSection/FinalCtaSection";
 import { SiteFooter } from "@/components/layout/SiteFooter/SiteFooter";
+import { SiteHeader } from "@/components/layout/SiteHeader/SiteHeader";
+import styles from "./page.module.css";
 
 export default function HomePage() {
-  return <><HeroSection /><main id="main-content"><FeaturesSection /><ComplianceSection /><SecuritySection /><PricingSection /><TestimonialsSection /><FinalCtaSection /></main><SiteFooter /></>;
+  return <><div className={styles.headerArea}><SiteHeader /></div><main id="main-content"><HeroSection /><FeaturesSection /><ComplianceSection /><SecuritySection /><PricingSection /><TestimonialsSection /><FinalCtaSection /></main><SiteFooter /></>;
 }

@@ -1,4 +1,3 @@
-import { SiteHeader } from "@/components/layout/SiteHeader/SiteHeader";
 import { Action } from "@/components/ui/Action/Action";
 import { site } from "@/config/site";
 import { DeviceMockups } from "../DeviceMockups/DeviceMockups";
@@ -6,7 +5,6 @@ import styles from "./HeroSection.module.css";
 
 export function HeroSection() {
   return <section id="home" className={styles.hero} aria-labelledby="hero-title">
-    <SiteHeader />
     <div className={styles.stage}><div className={styles.content}>
       <div className={styles.copy}>
         <div className={styles.badge}><span>Accounting</span><span>Made clearer</span></div>
