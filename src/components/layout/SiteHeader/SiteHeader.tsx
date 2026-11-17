@@ -78,11 +78,7 @@ export function SiteHeader() {
           >
             Sign In
           </Action>
-          <Action
-            href={site.destinations.signup}
-            arrow
-            onActivate={closeMenu}
-          >
+          <Action href={site.destinations.signup} arrow onActivate={closeMenu}>
             Sign Up
           </Action>
         </div>

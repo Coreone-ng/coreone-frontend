@@ -1822,5 +1822,59 @@
     "width": 1920.0,
     "height": 1440.0,
     "bytes": 1478
+  },
+  {
+    "node": "1110:211765",
+    "figmaName": "image0_1110_211765",
+    "file": "/assets/home/expenses/desktop.png",
+    "width": 2160,
+    "height": 2166,
+    "bytes": 280640,
+    "source": "User-supplied Desktop - 3 SVG export"
+  },
+  {
+    "node": "1110:211765",
+    "figmaName": "image1_1110_211765",
+    "file": "/assets/home/expenses/mobile.png",
+    "width": 660,
+    "height": 2712,
+    "bytes": 141460,
+    "source": "User-supplied Desktop - 3 SVG export"
+  },
+  {
+    "node": "1110:211765",
+    "figmaName": "Selected feature icon",
+    "file": "/assets/home/expenses/active-icon.svg",
+    "width": 24,
+    "height": 24,
+    "bytes": 1224,
+    "source": "Unmodified icon paths from user-supplied SVG"
+  },
+  {
+    "node": "1110:211910",
+    "figmaName": "image0_1110_211910",
+    "file": "/assets/home/reports/desktop.png",
+    "width": 2160,
+    "height": 2166,
+    "bytes": 224168,
+    "source": "User-supplied Desktop - 3 SVG export"
+  },
+  {
+    "node": "1110:211910",
+    "figmaName": "image1_1110_211910",
+    "file": "/assets/home/reports/mobile.png",
+    "width": 660,
+    "height": 2897,
+    "bytes": 143682,
+    "source": "User-supplied Desktop - 3 SVG export"
+  },
+  {
+    "node": "1110:211910",
+    "figmaName": "Selected feature icon",
+    "file": "/assets/home/reports/active-icon.svg",
+    "width": 24,
+    "height": 24,
+    "bytes": 1291,
+    "source": "Unmodified icon paths from user-supplied SVG"
   }
 ]

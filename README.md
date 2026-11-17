@@ -27,6 +27,6 @@ The lockfile pins the installed dependency graph. No authentication, dashboard, 
 - “See How It Works” scrolls to product features until `demoVideo` has a real destination.
 - Monthly plan prices and entitlements live in `src/features/home/data/pricing.ts`. Annual billing is disabled because approved annual prices were not supplied.
 - Typography and design tokens live in `src/styles/tokens.css`. BR Firma and Clash Grotesk were unavailable; the temporary stack is Avenir Next, Segoe UI, Arial, sans-serif. Supply licensed webfonts before approving exact typography.
-- Feature state content lives in `src/features/home/data/features.ts`. Expenses and Reports need their Figma variant exports; their previews explicitly show unavailable states.
+- Feature state content lives in `src/features/home/data/features.ts`. All six feature states include their supplied copy and local desktop/mobile mockups. Expenses and Reports use the SVG exports supplied on 17 November 2026.
 
 See [architecture](docs/architecture.md), [design references and limitations](docs/design-reference.md), and [verification](docs/verification.md).

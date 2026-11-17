@@ -29,7 +29,10 @@ export function Action({
   const titleId = useId();
   const [open, setOpen] = useState(false);
   useEffect(() => {
-    if (open) dialog.current?.showModal();
+    if (open) {
+      dialog.current?.showModal();
+      dialog.current?.querySelector<HTMLButtonElement>("button")?.focus();
+    }
   }, [open]);
   const classes = `${styles.action} ${styles[variant]} ${className}`;
   const content = (
@@ -71,26 +74,33 @@ export function Action({
       >
         {content}
       </button>
-      {open && createPortal(<dialog
-        ref={dialog}
-        className={styles.dialog}
-        aria-labelledby={titleId}
-        onClose={() => setOpen(false)}
-        onClick={(event) => {
-          if (event.target === event.currentTarget) dialog.current?.close();
-        }}
-      >
-        <h2 id={titleId}>Currently unavailable</h2>
-        <p>
-          This link is not available yet. You can reach us at{" "}
-          <a href={`mailto:${site.email}`}>{site.email}</a>.
-        </p>
-        <form method="dialog">
-          <button className={`${styles.action} ${styles.primary}`} autoFocus>
-            Close
-          </button>
-        </form>
-      </dialog>, document.body)}
+      {open &&
+        createPortal(
+          <dialog
+            ref={dialog}
+            className={styles.dialog}
+            aria-labelledby={titleId}
+            onClose={() => setOpen(false)}
+            onClick={(event) => {
+              if (event.target === event.currentTarget) dialog.current?.close();
+            }}
+          >
+            <h2 id={titleId}>Currently unavailable</h2>
+            <p>
+              This link is not available yet. You can reach us at{" "}
+              <a href={`mailto:${site.email}`}>{site.email}</a>.
+            </p>
+            <form method="dialog">
+              <button
+                className={`${styles.action} ${styles.primary}`}
+                autoFocus
+              >
+                Close
+              </button>
+            </form>
+          </dialog>,
+          document.body,
+        )}
     </>
   );
 }

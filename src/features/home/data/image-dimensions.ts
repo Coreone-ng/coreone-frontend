@@ -63,4 +63,8 @@ export const imageDimensions: Record<
     width: 455,
     height: 4096,
   },
+  "/assets/home/expenses/desktop.png": { width: 2160, height: 2166 },
+  "/assets/home/expenses/mobile.png": { width: 660, height: 2712 },
+  "/assets/home/reports/desktop.png": { width: 2160, height: 2166 },
+  "/assets/home/reports/mobile.png": { width: 660, height: 2897 },
 };

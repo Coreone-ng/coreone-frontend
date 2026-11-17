@@ -129,6 +129,9 @@ export function FeatureTabs() {
                   mobile={item.mobile}
                   desktopCrop={item.desktopCrop}
                   mobileCrop={item.mobileCrop}
+                  desktopPosition={item.desktopPosition}
+                  mobilePosition={item.mobilePosition}
+                  desktopInset={item.desktopInset}
                   label={`CoreOne ${item.label}`}
                 />
               </div>
