@@ -4,7 +4,7 @@ import { DeviceMockups } from "../DeviceMockups/DeviceMockups";
 import styles from "./HeroSection.module.css";
 
 export function HeroSection() {
-  return <section id="home" className={styles.hero} aria-labelledby="hero-title">
+  return <section className={styles.hero} aria-labelledby="hero-title">
     <div className={styles.stage}><div className={styles.content}>
       <div className={styles.copy}>
         <div className={styles.badge}><span>Accounting</span><span>Made clearer</span></div>
