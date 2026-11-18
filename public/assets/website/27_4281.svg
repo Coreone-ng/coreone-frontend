@@ -1,0 +1,15 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Background">
+<path d="M12 0.5H32C38.3513 0.5 43.5 5.64873 43.5 12V32C43.5 38.3513 38.3513 43.5 32 43.5H12C5.64873 43.5 0.5 38.3513 0.5 32V12C0.5 5.64873 5.64873 0.5 12 0.5Z" stroke="#D5D7DA"/>
+<g id="note">
+<g id="vuesax/linear/note">
+<g id="note_2">
+<path id="Vector" d="M30 18.25V28C30 31 28.21 32 26 32H18C15.79 32 14 31 14 28V18.25C14 15 15.79 14.25 18 14.25C18 14.87 18.25 15.43 18.66 15.84C19.07 16.25 19.63 16.5 20.25 16.5H23.75C24.99 16.5 26 15.49 26 14.25C28.21 14.25 30 15 30 18.25Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_2" d="M26 14.25C26 15.49 24.99 16.5 23.75 16.5H20.25C19.63 16.5 19.07 16.25 18.66 15.84C18.25 15.43 18 14.87 18 14.25C18 13.01 19.01 12 20.25 12H23.75C24.37 12 24.93 12.25 25.34 12.66C25.75 13.07 26 13.63 26 14.25Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#717680"/>
+<path id="Vector_3" d="M18 23H22" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_4" d="M18 27H26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

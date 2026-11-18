@@ -1,0 +1,15 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Background">
+<path d="M12 0.5H32C38.3513 0.5 43.5 5.64873 43.5 12V32C43.5 38.3513 38.3513 43.5 32 43.5H12C5.64873 43.5 0.5 38.3513 0.5 32V12C0.5 5.64873 5.64873 0.5 12 0.5Z" stroke="#D5D7DA"/>
+<g id="bill">
+<g id="vuesax/linear/bill">
+<g id="bill_2">
+<path id="Vector" d="M13.6699 12.5V24.47C13.6699 25.45 14.1299 26.38 14.9199 26.97L20.1299 30.87C21.2399 31.7 22.7699 31.7 23.8799 30.87L29.0899 26.97C29.8799 26.38 30.3399 25.45 30.3399 24.47V12.5H13.6699Z" stroke-width="1.5" stroke-miterlimit="10" stroke="#292D32"/>
+<path id="Vector_2" d="M12 12.5H32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke="#717680"/>
+<path id="Vector_3" d="M18 18H26" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_4" d="M18 23H26" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

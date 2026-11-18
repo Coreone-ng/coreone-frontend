@@ -1,0 +1,23 @@
+.search {
+  position: relative;
+  width: min(460px, 100%);
+}
+.search > img {
+  position: absolute;
+  left: 16px;
+  top: 18px;
+}
+.search input {
+  width: 100%;
+  min-height: 56px;
+  padding: 16px 16px 16px 44px;
+  border: 1px solid #f2f4f7;
+  border-radius: 20px;
+  background: white;
+  color: var(--color-ink);
+  font-size: 14px;
+  line-height: 24px;
+}
+.search input::placeholder {
+  color: #98a2b3;
+}

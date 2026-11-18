@@ -24,7 +24,7 @@ The feature component set is `1110:211619`. Detailed responses were obtained for
 - No BR Firma or Clash Grotesk files were present in the empty repository or supplied attachments. Their temporary fallbacks are centrally configured in `tokens.css`. Different font metrics affect line breaks and density; exact typography parity is not claimed. The desktop hero supporting-copy width is tuned for the fallback.
 - The design's testimonial cards contain gray rectangles, not usable customer photos or video sources. The five-card composition is preserved. Playback remains unavailable and opens an honest notice.
 - Annual billing is disabled. Monthly prices are exactly ₦4,500, ₦7,000, and ₦10,000. No annual multiplier or discount is assumed.
-- Signup/login, company/support/legal/social destinations, and compliance/security detail destinations remain null in central configuration. The supplied phone number and email are retained. “See How It Works” scrolls to `#features`, per the user's follow-up.
+- Signup/login, social destinations, and compliance/security detail destinations remain null in central configuration. About, Contact, Terms, Privacy, and the supplied blog article now have local routes from the subsequent [website handoff](website-updates.md). The supplied phone number and email are retained. “See How It Works” scrolls to `#features`, per the user's follow-up.
 - Obvious button typos in the source, “Lear More” and “Start Fee Trial,” are rendered as “Learn More” and “Start Free Trial.” Prices and entitlements are preserved.
 - The footer SVGs visually represent X, Facebook, Instagram, and LinkedIn. Their accessible labels follow the actual artwork, correcting stale layer labels in the returned metadata.
 

@@ -1,9 +1,9 @@
 import { site } from "./site";
 
 export const navigation = [
-  { label: "Home", href: "#home" },
-  { label: "Features", href: "#features" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Home", href: "/#home" },
+  { label: "Features", href: site.destinations.features },
+  { label: "Pricing", href: site.destinations.pricing },
   { label: "FAQs", href: site.destinations.faqs },
   { label: "Blog", href: site.destinations.blog },
   { label: "About Us", href: site.destinations.about },
@@ -28,8 +28,8 @@ export const footerNavigation = [
   {
     title: "Product",
     links: [
-      { label: "Features", href: "#features" },
-      { label: "Pricing", href: "#pricing" },
+      { label: "Features", href: site.destinations.features },
+      { label: "Pricing", href: site.destinations.pricing },
     ],
   },
   {

@@ -1,0 +1,12 @@
+.header {
+  padding-top: 41px;
+  background: white;
+}
+.cyan {
+  background: var(--color-hero);
+}
+@media (max-width: 767px) {
+  .header {
+    padding-top: 20px;
+  }
+}

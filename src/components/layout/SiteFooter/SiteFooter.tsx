@@ -16,7 +16,7 @@ export function SiteFooter() {
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <a href="#home" aria-label="CoreOne home">
+            <a href="/#home" aria-label="CoreOne home">
               <img
                 src="/assets/brand/coreone-white.svg"
                 width={147}

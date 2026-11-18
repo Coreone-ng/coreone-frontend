@@ -1,0 +1,21 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Background">
+<path d="M12 0.5H32C38.3513 0.5 43.5 5.64873 43.5 12V32C43.5 38.3513 38.3513 43.5 32 43.5H12C5.64873 43.5 0.5 38.3513 0.5 32V12C0.5 5.64873 5.64873 0.5 12 0.5Z" stroke="#D5D7DA"/>
+<g id="calendar">
+<g id="vuesax/linear/calendar">
+<g id="calendar_2">
+<path id="Vector" d="M18 12V15" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_2" d="M26 12V15" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#717680"/>
+<path id="Vector_3" d="M13.5 19.0898H30.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_4" d="M31 18.5V27C31 30 29.5 32 26 32H18C14.5 32 13 30 13 27V18.5C13 15.5 14.5 13.5 18 13.5H26C29.5 13.5 31 15.5 31 18.5Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_5" d="M25.6947 23.7002H25.7037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_6" d="M25.6947 26.7002H25.7037" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_7" d="M21.9955 23.7002H22.0045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_8" d="M21.9955 26.7002H22.0045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_9" d="M18.2943 23.7002H18.3033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_10" d="M18.2943 26.7002H18.3033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

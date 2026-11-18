@@ -13,6 +13,7 @@ type ActionProps = {
   className?: string;
   label?: string;
   onActivate?: () => void;
+  current?: boolean;
 };
 
 /** Real links stay native; missing destinations explain their unavailable state. */
@@ -24,6 +25,7 @@ export function Action({
   className = "",
   label,
   onActivate,
+  current,
 }: ActionProps) {
   const dialog = useRef<HTMLDialogElement>(null);
   const titleId = useId();
@@ -55,6 +57,7 @@ export function Action({
         className={classes}
         href={href}
         aria-label={label}
+        aria-current={current ? "page" : undefined}
         onClick={onActivate}
       >
         {content}

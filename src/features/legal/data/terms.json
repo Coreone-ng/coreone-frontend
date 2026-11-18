@@ -1,0 +1,179 @@
+{
+  "sourceId": "59:19095",
+  "title": "Terms of Service",
+  "description": "The agreement that governs your access to CoreOne, the people\nwho depend on you, and the people behind us. Please read it carefully.",
+  "updated": "12 October 2026",
+  "sections": [
+    {
+      "id": "58-12370",
+      "sourceId": "58:12370",
+      "label": "SECTION 01",
+      "title": "About these Terms",
+      "paragraphs": [
+        "1.1 These Terms are an agreement between [Company legal name], RC [number], of [registered address] (“Coreone”, “we”, “us”) and you. “You” means the individual who accepts these Terms and, if you register on behalf of a business, that business too.\n1.2 By creating an account, clicking to accept, or using the Services, you agree to these Terms. If you accept on behalf of a business, you confirm you have authority to bind it.\n1.3 You must be at least 18 and legally able to enter into a contract.\n1.4 These Terms include our Privacy Policy and the Data Processing Terms in Schedule 1.\n\n"
+      ]
+    },
+    {
+      "id": "58-12378",
+      "sourceId": "58:12378",
+      "label": "SECTION 02",
+      "title": "Your account",
+      "paragraphs": [
+        "3.1 Registration. Give accurate information when you register, keep it up to date, and verify your email address.\n3.2 Account Owner. The person who creates a Business becomes its Account Owner. The Account Owner controls the account, may invite Authorised Users, assign roles and permissions, and deactivate access. The Business is responsible for what its Authorised Users do and for the roles it assigns.\n3.3 Security. Keep your login details confidential and do not share them. Tell us promptly if you suspect unauthorised use. You are responsible for activity under your account, unless it results from our breach of these Terms.\n3.4 Separation. Each Business’s data is kept separate. You must not try to access another Business’s data."
+      ]
+    },
+    {
+      "id": "58-12385",
+      "sourceId": "58:12385",
+      "label": "SECTION 03",
+      "title": "The Services",
+      "paragraphs": [
+        "4.1 What we provide. Coreone provides bookkeeping and financial management tools, including a double-entry ledger, chart of accounts, invoices, vendor bills, payment records, expenses with receipt OCR, bank statement import and review, journal entries, reports, an audit trail and team permissions.\n\n4.2 No professional advice. Coreone is software. We are not your accountant, auditor, tax adviser or lawyer, and the Services do not give professional advice. Reports are built from the entries you and your team post. Please consult a qualified professional for accounting, tax and legal decisions.\n\n4.3 Tax and e-invoicing. The Services help you capture tax identity and invoice information in a structure designed for Nigerian requirements. Capturing that information does not make an invoice compliant with NRS/Rev360 or any other law. You remain responsible for deciding and applying tax treatment, charging and accounting for VAT, filing returns and meeting any e-invoicing duties. Where we later offer integration with NRS/Rev360, availability may depend on NRS onboarding, API access and specifications, which can change.\n\n4.4 No handling of money. Coreone is not a bank, payment service provider or escrow agent. We do not hold, receive or transfer your money. Recording a payment in Coreone does not move funds. The bank details you show on invoices are your responsibility.\n\n4.5 Changes. We may improve, change, add or remove features. If we remove a material feature from a paid Plan, we will give reasonable notice.\n4.6 Beta features. Features labelled beta or preview may change or stop, and are provided as they are.\n"
+      ]
+    },
+    {
+      "id": "58-12392",
+      "sourceId": "58:12392",
+      "label": "SECTION 04",
+      "title": "Your responsibilities",
+      "paragraphs": [
+        "5.1 Accuracy. You are responsible for the accuracy, completeness and lawfulness of your Customer Data, and for decisions you make using the reports.\n\n5.2 Review before posting. OCR and statement parsing are automated and can be wrong. You must review extracted receipt data and imported transactions before posting them. We are not responsible for errors you approve.\n\n5.3 Posted entries. Posted entries are locked. You correct them by reversal or adjustment, and the Services keep an audit trail of material changes.\n\n5.4 Rights to data. You must have the right, and any consent or other lawful basis needed, to upload personal data about customers, vendors, staff and others, including bank statements.\n\n5.5 Legal compliance. You are responsible for complying with the laws that apply to your business, including tax, accounting, data protection and anti-money-laundering laws. \n\n5.6Copies. Use the export features to keep your own copies of your records."
+      ]
+    },
+    {
+      "id": "58-12399",
+      "sourceId": "58:12399",
+      "label": "SECTION 05",
+      "title": "Acceptable use",
+      "paragraphs": [
+        "6. Acceptable use\n6.1 You must not, and must not allow anyone else to:\nuse the Services for anything unlawful or fraudulent, including falsifying records, evading tax or laundering money\nupload malware or content that infringes anyone’s rights\nprobe, scan or test the Services for weaknesses without our written permission\nbypass security, role permissions or the separation between Businesses\nscrape, copy, reverse engineer or build a competing product from the Services\nresell or sublicense the Services\nplace an unreasonable load on the Services or send spam through invitations or messages\n6.2 We may investigate breaches and cooperate with the authorities.\n"
+      ]
+    },
+    {
+      "id": "58-12406",
+      "sourceId": "58:12406",
+      "label": "SECTION 06",
+      "title": "Plans, fees and payment",
+      "paragraphs": [
+        "[Complete this section once the pricing model is decided.]\n7.1 Fees. Plans and prices are shown on our pricing page. Fees are in Nigerian Naira (NGN) and exclude taxes such as VAT unless we say otherwise. A free Plan, if offered, may have limited features.\n\n7.2 Billing. Paid Plans are billed in advance [monthly or annually] and renew automatically until cancelled. Payments are processed by third-party payment providers.\n\n7.3 Price changes. We will give at least [30] days’ notice of a fee increase, which takes effect at your next renewal.\n7.4 Late payment. If a payment fails we will tell you. We may suspend the account after [number] days of non-payment, and restore it once you pay. Section 12 applies to data kept during suspension.\n\n7.5Refunds. [Fees are non-refundable except where the law requires or we state otherwise.]\n7.6Taxes. You are responsible for taxes that apply to your purchase."
+      ]
+    },
+    {
+      "id": "58-12413",
+      "sourceId": "58:12413",
+      "label": "SECTION 07",
+      "title": "Your data",
+      "paragraphs": [
+        "8.1 Ownership. You own your Customer Data. We claim no ownership of it.\n8.2 Licence to us. You give us a non-exclusive licence, for as long as you use the Services, to host, copy, process, transmit and display Customer Data only to provide, secure, support and improve the Services, as described in the Privacy Policy and Schedule 1.\n8.3 Aggregated data. We may use data that does not identify you or any person to analyse and improve the Services.\n8.4 AI. [CONFIRM: We will not use Customer Data to train artificial-intelligence models for other customers or for general purposes.]\n8.5 Export. You can export your Customer Data in [CSV, Excel and PDF] formats while your account is active and for [30] days after it ends.\n8.6 Data protection. Each of us will comply with the Nigeria Data Protection Act 2023 and related directives. For Customer Data, we act as your data processor and Schedule 1 applies. For personal data about you as an account holder, our Privacy Policy applies.\n"
+      ]
+    },
+    {
+      "id": "58-12420",
+      "sourceId": "58:12420",
+      "label": "SECTION 08",
+      "title": "Third-party services",
+      "paragraphs": [
+        "9.1 Integrations. The Services may work with third-party services, such as OCR providers, payment providers, email services, and in future NRS/Rev360 and banks. Their own terms apply, and we do not control them or accept responsibility for them.\n9.2 Payment links. When payment links are available, payments are processed by the payment provider under its terms. Disputes between you and your customer are for you to resolve.\n9.3 Statement formats. We support particular bank statement formats. Other formats may fail to import."
+      ]
+    },
+    {
+      "id": "58-12427",
+      "sourceId": "58:12427",
+      "label": "SECTION 09",
+      "title": "Intellectual property",
+      "paragraphs": [
+        "10.1 Our rights. Coreone and its licensors own the Services, software, design, documentation and trademarks. You receive no rights except those stated here.\n10.2 Licence to you. We grant you a limited, non-exclusive, non-transferable, revocable licence to use the Services for your internal business purposes while these Terms apply.\n10.3 Your branding. You keep your rights in logos and trademarks you upload, and allow us to show them on your invoices and within your account.\n10.4 Feedback. If you give us ideas or suggestions, we may use them freely, without payment or obligation.\n"
+      ]
+    },
+    {
+      "id": "58-12434",
+      "sourceId": "58:12434",
+      "label": "SECTION 10",
+      "title": "Confidentiality",
+      "paragraphs": [
+        "11.1 Each of us will keep the other’s non-public information confidential, use it only for these Terms, and protect it with reasonable care. This does not cover information that is public through no fault of ours, that we already knew or learned from someone else lawfully, or that must be disclosed by law (in which case we will give notice where we can).\n\n"
+      ]
+    },
+    {
+      "id": "58-12441",
+      "sourceId": "58:12441",
+      "label": "SECTION 11",
+      "title": "Term, suspension and termination",
+      "paragraphs": [
+        "12.1 Term. These Terms last until ended by you or us.\n12.2 Ending it yourself. You can stop using the Services or close your account at any time. A paid Plan ends at the close of the current billing period unless we say otherwise.\n12.3 Ending by us. We may suspend or end your access if you materially breach these Terms, fail to pay, create a security or legal risk, or use the Services unlawfully. Where necessary to protect the Services or others, we may suspend immediately. If we discontinue the Services, we will give at least [90] days’ notice [and refund prepaid unused fees].\n12.4 What happens next. Access ends. You may export your data for [30] days, after which we delete or anonymise it as the Privacy Policy and Schedule 1 describe, unless the law requires us to keep it.\n12.5 Survival. Sections that by nature should continue will continue, including those on intellectual property, disclaimers, liability, indemnity, payment and governing law."
+      ]
+    },
+    {
+      "id": "58-12448",
+      "sourceId": "58:12448",
+      "label": "SECTION 12",
+      "title": "Availability and support",
+      "paragraphs": [
+        "13.1We will use reasonable efforts to keep the Services available and to give notice of planned maintenance where practical. We do not promise uninterrupted service. Support is available through [channels and hours]. There is no uptime commitment unless we agree one in writing."
+      ]
+    },
+    {
+      "id": "58-12498",
+      "sourceId": "58:12498",
+      "label": "SECTION 13",
+      "title": "Disclaimers",
+      "paragraphs": [
+        "14.1 To the extent the law allows, the Services are provided “as is” and “as available”, without warranties of any kind, including merchantability, fitness for a particular purpose and non-infringement. We do not promise that the Services will be error-free, that OCR or statement parsing will be accurate, or that using them will satisfy any regulatory requirement, including NRS/Rev360 requirements.\n14.2 Nothing in these Terms excludes a liability that cannot be excluded by law."
+      ]
+    },
+    {
+      "id": "58-12505",
+      "sourceId": "58:12505",
+      "label": "SECTION 14",
+      "title": "Limitation of liability",
+      "paragraphs": [
+        "15. Limitation of liability\n15.1 What is not limited. Nothing here limits liability for fraud, wilful misconduct, death or personal injury caused by negligence, or anything else the law does not allow us to limit.\n15.2 Excluded losses. To the extent the law allows, we are not liable for indirect or consequential loss, or for loss of profit, revenue, goodwill or data, or for tax assessments, penalties or interest, arising from your use of the Services.\n15.3 Cap. Our total liability for all claims in any 12-month period is limited to the greater of [the fees you paid us in the 12 months before the claim] and [₦ amount].\n"
+      ]
+    },
+    {
+      "id": "58-12512",
+      "sourceId": "58:12512",
+      "label": "SECTION 15",
+      "title": "Indemnity",
+      "paragraphs": [
+        "16.1 You will defend and compensate us against third-party claims, losses and reasonable costs arising from your Customer Data, your breach of these Terms or the law, or your misuse of the Services. We will tell you promptly about the claim, let you control the defence, and give reasonable help at your cost.\n"
+      ]
+    },
+    {
+      "id": "58-12519",
+      "sourceId": "58:12519",
+      "label": "SECTION 16",
+      "title": "Changes to these Terms",
+      "paragraphs": [
+        "17.1 We may update these Terms. For material changes we will give at least [30] days’ notice by email or in the Services. If you keep using the Services after the change takes effect, you accept it. If you do not agree, you can close your account before then."
+      ]
+    },
+    {
+      "id": "58-12526",
+      "sourceId": "58:12526",
+      "label": "SECTION 17",
+      "title": "Governing law and disputes",
+      "paragraphs": [
+        "18.1 Law. These Terms are governed by the laws of the Federal Republic of Nigeria.\n18.2 Talk first. Before starting formal proceedings, each of us will give written notice of the dispute and try in good faith to settle it for [30] days.\n18.3 Arbitration. [Disputes not settled will be referred to arbitration under the Arbitration and Mediation Act 2023, before a single arbitrator, seated in Lagos, in English.\n\n18.4 Courts. The courts of Lagos State may hear applications for urgent relief and any matter that cannot go to arbitration. Nothing stops you complaining to the NDPC or another regulator.\n"
+      ]
+    },
+    {
+      "id": "58-12455",
+      "sourceId": "58:12455",
+      "label": "SECTION 18",
+      "title": "General",
+      "paragraphs": [
+        "19.1 Entire agreement. These Terms are the whole agreement between us on the Services and replace earlier discussions.\n19.2 Assignment. We may assign these Terms in a merger, acquisition or sale of assets. You may not assign them without our written consent.\n19.3 Severability and waiver. If a provision is unenforceable, the rest stays in effect. Failing to enforce a right is not a waiver of it.\n19.4 Force majeure. Neither of us is liable for delay or failure caused by events beyond reasonable control.\n19.5 Notices. We may give notices by email or in the Services. You can write to us at [email address] or [registered address].\n19.6 Third parties. Nobody else has rights to enforce these Terms.\n19.7 Electronic acceptance. You accept these Terms electronically, and that has the same effect as a signature.\n"
+      ]
+    },
+    {
+      "id": "58-12462",
+      "sourceId": "58:12462",
+      "label": "SECTION 19",
+      "title": "Contact us",
+      "paragraphs": [
+        "20.1[Company legal name], [registered address], [support email address]."
+      ]
+    }
+  ]
+}

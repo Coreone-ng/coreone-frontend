@@ -1,4 +1,4 @@
-# CoreOne homepage
+# CoreOne website
 
 Next.js App Router, React, strict TypeScript, and CSS Modules. Implemented from the supplied CoreOne Figma homepage, with original assets stored locally.
 
@@ -19,7 +19,9 @@ npm run build
 npm start
 ```
 
-The lockfile pins the installed dependency graph. No authentication, dashboard, or additional marketing pages are included.
+The lockfile pins the installed dependency graph. The website includes the homepage, Features, Pricing, FAQs, About Us, Contact Us, Terms of Service, Privacy Policy, the blog index and supplied article, and a custom 404. Authentication and the application dashboard remain outside this implementation.
+
+Run the targeted contact-validation and FAQ-search tests with `npm test`. See [website updates](docs/website-updates.md) and the [Features, Pricing, FAQ and blog-index update](docs/homepage-navigation-update.md) for route maps, local handoffs, and remaining content/integration gaps.
 
 ## Configuration
 

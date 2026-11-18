@@ -1,0 +1,345 @@
+[
+  {
+    "sourceId": "27:4236",
+    "id": "accounting",
+    "navigation": "Accounting",
+    "number": "01",
+    "eyebrow": "The books beneath it all",
+    "title": "Accounting Foundation",
+    "icon": "/assets/website/27_4245.svg",
+    "comingSoon": false,
+    "description": null,
+    "items": [
+      {
+        "title": "Double-Entry General Ledger",
+        "description": "Every transaction is recorded as a proper journal entry, so your books always balance."
+      },
+      {
+        "title": "Chart of Accounts",
+        "description": "A ready-made, customisable list of accounts for assets, liabilities, equity, income and expenses."
+      },
+      {
+        "title": "Opening Balances",
+        "description": "Start on Coreone without losing your financial history, bring in existing balances from day one."
+      },
+      {
+        "title": "Audit Trail",
+        "description": "See who did what, and when, for every material change to "
+      }
+    ]
+  },
+  {
+    "sourceId": "27:4272",
+    "id": "invoicing",
+    "navigation": "Invoicing & payments",
+    "number": "02",
+    "eyebrow": "Get paid with confidence",
+    "title": "Invoicing & Payments",
+    "icon": "/assets/website/27_4281.svg",
+    "comingSoon": false,
+    "description": null,
+    "items": [
+      {
+        "title": "Professional Invoices",
+        "description": "Create and send branded, PDF-ready invoices in minutes."
+      },
+      {
+        "title": "Bank Transfer Details",
+        "description": "Show customers exactly where to pay, right on the invoice."
+      },
+      {
+        "title": "Payment Tracking",
+        "description": "Mark invoices unpaid, partially paid or paid, and know who owes you at a glance."
+      },
+      {
+        "title": "Tax-Aware Invoices",
+        "description": "Apply relevant tax treatment based on your business's configured tax settings."
+      },
+      {
+        "title": "Sequential Invoice Numbering",
+        "description": "Generate properly sequenced invoice numbers for organised record-keeping and compliance."
+      },
+      {
+        "title": "Payment Links",
+        "description": "Let customers pay online, with Coreone designed to work with multiple providers."
+      }
+    ]
+  },
+  {
+    "sourceId": "27:4316",
+    "id": "expenses",
+    "navigation": "Expenses",
+    "number": "03",
+    "eyebrow": "Keep spending in view",
+    "title": "Expenses & Bills",
+    "icon": "/assets/website/27_4325.svg",
+    "comingSoon": false,
+    "description": null,
+    "items": [
+      {
+        "title": "Expense Recording",
+        "description": "Log what your business spends, categorised the right way."
+      },
+      {
+        "title": "Receipt OCR",
+        "description": "Upload a receipt and let Coreone read the vendor, date and amount for you."
+      },
+      {
+        "title": "Vendor Bills",
+        "description": "Track what you owe your suppliers, and when it's due."
+      },
+      {
+        "title": "Intelligent Expense Categorisation",
+        "description": "Automatically suggest an accounting category for expenses based on transaction details."
+      }
+    ]
+  },
+  {
+    "sourceId": "27:4359",
+    "id": "banking",
+    "navigation": "Banking",
+    "number": "04",
+    "eyebrow": "Bring activity into the books",
+    "title": "Banking & Reconciliation",
+    "icon": "/assets/website/27_4368.svg",
+    "comingSoon": false,
+    "description": null,
+    "items": [
+      {
+        "title": "Direct Bank Feeds",
+        "description": "Connect supported bank accounts and bring transactions directly into Coreone."
+      },
+      {
+        "title": "Statement Import",
+        "description": "Upload CSV, Excel or supported PDF statements when a direct bank connection isn't available."
+      },
+      {
+        "title": "Intelligent Transaction Categorisation",
+        "description": "Automatically suggest the appropriate account or category for imported transactions."
+      },
+      {
+        "title": "Transaction Review",
+        "description": "Review and approve transactions before they are posted to the ledger."
+      },
+      {
+        "title": "Advanced Reconciliation",
+        "description": "Match bank transactions against invoices, expenses and payments, and identify unmatched items."
+      }
+    ]
+  },
+  {
+    "sourceId": "27:4403",
+    "id": "tax-compliance",
+    "navigation": "Tax & compliance",
+    "number": "05",
+    "eyebrow": "Designed for changing requirements",
+    "title": "Tax & Compliance",
+    "icon": "/assets/website/27_4412.svg",
+    "comingSoon": false,
+    "description": null,
+    "items": [
+      {
+        "title": "Tax ID / TIN Capture",
+        "description": "Store the relevant tax identification details for your business, customers and vendors for invoicing and compliance."
+      },
+      {
+        "title": "Tax Calculation",
+        "description": "Calculate applicable taxes based on your business's transactions and configured tax rules."
+      },
+      {
+        "title": "Compliance Automation",
+        "description": "Track tax obligations, deadlines and required information to help businesses stay compliant."
+      },
+      {
+        "title": "Multi-Country Tax Settings",
+        "description": "Support different tax rules and configurations as businesses expand into other markets."
+      }
+    ]
+  },
+  {
+    "sourceId": "27:4439",
+    "id": "payroll",
+    "navigation": "Payroll",
+    "number": "06",
+    "eyebrow": "Keep payroll records together",
+    "title": "Payroll",
+    "icon": "/assets/website/27_4448.svg",
+    "comingSoon": false,
+    "description": null,
+    "items": [
+      {
+        "title": "Payroll Management",
+        "description": "Manage employee salaries, allowances, deductions and payroll records."
+      },
+      {
+        "title": "PAYE Support",
+        "description": "Calculate and track applicable PAYE obligations."
+      },
+      {
+        "title": "Payroll Reports",
+        "description": "Generate payroll summaries and supporting reports."
+      }
+    ]
+  },
+  {
+    "sourceId": "27:4475",
+    "id": "inventory",
+    "navigation": "Inventory",
+    "number": "07",
+    "eyebrow": "Stock connected to the books",
+    "title": "Inventory",
+    "icon": "/assets/website/27_4484.svg",
+    "comingSoon": false,
+    "description": null,
+    "items": [
+      {
+        "title": "Inventory Management",
+        "description": "Track stock levels, purchases, sales and stock movements."
+      },
+      {
+        "title": "Cost of Sales",
+        "description": "Track the cost associated with goods sold and connect inventory activity to the accounting records."
+      },
+      {
+        "title": "Inventory Reporting",
+        "description": "Understand stock levels, movements and inventory value."
+      }
+    ]
+  },
+  {
+    "sourceId": "27:4511",
+    "id": "reports",
+    "navigation": "Reports",
+    "number": "08",
+    "eyebrow": "See what the numbers say",
+    "title": "Reports & Insight",
+    "icon": "/assets/website/27_4520.svg",
+    "comingSoon": false,
+    "description": null,
+    "items": [
+      {
+        "title": "Core Reports",
+        "description": "Profit & Loss, Balance Sheet, Trial Balance and General Ledger, generated from posted transactions."
+      },
+      {
+        "title": "AR/AP Ageing",
+        "description": "AR/AP Ageing"
+      },
+      {
+        "title": "Expense Summaries & Cash Activity",
+        "description": "A clear read on where your money goes, period over period."
+      },
+      {
+        "title": "Cash-Flow Forecasting",
+        "description": "Use financial data to understand expected future cash inflows and outflows."
+      },
+      {
+        "title": "Budgeting",
+        "description": "Set budgets and compare actual financial performance against planned figures."
+      }
+    ]
+  },
+  {
+    "sourceId": "27:4555",
+    "id": "team-security",
+    "navigation": "Team & security",
+    "number": "09",
+    "eyebrow": "The right people, the right access",
+    "title": "Team & Security",
+    "icon": "/assets/website/27_4564.svg",
+    "comingSoon": false,
+    "description": null,
+    "items": [
+      {
+        "title": "Roles & Permissions",
+        "description": "Give your accountant, finance staff or a viewer exactly the access they need."
+      },
+      {
+        "title": "Business-Scoped Data",
+        "description": "Every record belongs to your business, and only your business."
+      },
+      {
+        "title": "Secure by Design",
+        "description": "Encrypted data, secure file storage and logged activity across the platform."
+      },
+      {
+        "title": "Approval Workflows",
+        "description": "Create approval processes for expenses, purchases, payments and other financial activities."
+      }
+    ]
+  },
+  {
+    "sourceId": "27:4629",
+    "id": "nigeria",
+    "navigation": "Nigeria",
+    "number": "10",
+    "eyebrow": "Starting with local requirements",
+    "title": "Built for Nigeria",
+    "icon": "/assets/website/27_4639.svg",
+    "comingSoon": false,
+    "description": "Tax ID-based identity, sequential invoice numbering and the data fields Nigeria's tax rules require, built in from the start, not bolted on later.",
+    "items": []
+  },
+  {
+    "sourceId": "28:4655",
+    "id": "roadmap",
+    "navigation": "Road map",
+    "number": "11",
+    "eyebrow": "Intelligent Finance · Roadmap",
+    "title": "Financial intelligence, on the roadmap",
+    "icon": null,
+    "comingSoon": true,
+    "description": null,
+    "items": [
+      {
+        "title": "AI Financial Assistant / AI CFO",
+        "description": "Help users understand their financial position, analyse performance and make better decisions."
+      },
+      {
+        "title": "Natural-Language Financial Questions",
+        "description": "Ask questions about business finances in plain language and receive answers based on financial data."
+      },
+      {
+        "title": "Predictive Analytics & Scenario Planning",
+        "description": "Forecast future performance and test scenarios before making financial decisions."
+      },
+      {
+        "title": "Anomaly & Fraud-Risk Detection",
+        "description": "Identify unusual transactions and financial patterns that may require attention."
+      },
+      {
+        "title": "Business Recommendations",
+        "description": "Surface useful insights and recommendations based on business financial data."
+      }
+    ]
+  },
+  {
+    "sourceId": "28:4706",
+    "id": "built-to-grow",
+    "navigation": "Built to grow",
+    "number": "12",
+    "eyebrow": "Built to grow with your business",
+    "title": "Room to scale",
+    "icon": "/assets/website/28_4715.svg",
+    "comingSoon": false,
+    "description": null,
+    "items": [
+      {
+        "title": "Multi-Currency",
+        "description": "Manage transactions, invoices, expenses and bank accounts in multiple currencies."
+      },
+      {
+        "title": "Multi-Entity",
+        "description": "Manage multiple businesses, subsidiaries or entities from one platform."
+      },
+      {
+        "title": "Multi-Country",
+        "description": "Adapt financial and tax settings as your business expands into different markets."
+      },
+      {
+        "title": "APIs & Integrations",
+        "description": "Connect Coreone with banks, payment providers, tax platforms and other business applications."
+      }
+    ]
+  }
+]

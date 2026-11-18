@@ -1,12 +1,14 @@
 "use client";
 
 import { useId, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { navigation } from "@/config/navigation";
 import { site } from "@/config/site";
 import { Action } from "@/components/ui/Action/Action";
 import styles from "./SiteHeader.module.css";
 
 export function SiteHeader() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const toggle = useRef<HTMLButtonElement>(null);
@@ -26,7 +28,7 @@ export function SiteHeader() {
     >
       <a
         className={styles.brand}
-        href="#home"
+        href="/#home"
         aria-label="CoreOne home"
         onClick={() => setOpen(false)}
       >
@@ -56,18 +58,28 @@ export function SiteHeader() {
       <div id={menuId} className={`${styles.menu} ${open ? styles.open : ""}`}>
         <nav aria-label="Main navigation">
           <ul className={styles.links}>
-            {navigation.map((item) => (
-              <li key={item.label}>
-                <Action
-                  href={item.href}
-                  variant="text"
-                  className={item.label === "Home" ? styles.current : ""}
-                  onActivate={closeMenu}
-                >
-                  {item.label}
-                </Action>
-              </li>
-            ))}
+            {navigation.map((item) => {
+              const current =
+                item.label === "Home"
+                  ? pathname === "/"
+                  : !!item.href &&
+                    !item.href.includes("#") &&
+                    (pathname === item.href ||
+                      pathname.startsWith(`${item.href}/`));
+              return (
+                <li key={item.label}>
+                  <Action
+                    href={item.href}
+                    variant="text"
+                    current={current}
+                    className={current ? styles.current : ""}
+                    onActivate={closeMenu}
+                  >
+                    {item.label}
+                  </Action>
+                </li>
+              );
+            })}
           </ul>
         </nav>
         <div className={styles.account}>

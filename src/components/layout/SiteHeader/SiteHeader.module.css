@@ -27,8 +27,8 @@
   align-items: center;
   list-style: none;
   padding: 0;
-  margin: 0;
-  gap: 24px;
+  margin: 0 0 0 76px;
+  gap: 32px;
   color: #717680;
   font-size: 16px;
   font-weight: 500;
@@ -64,6 +64,7 @@
 }
 @media (max-width: 1250px) {
   .links {
+    margin-left: 0;
     gap: 16px;
     font-size: 14px;
   }

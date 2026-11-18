@@ -1,0 +1,260 @@
+[
+  {
+    "sourceId": "1121:236110",
+    "image": "/assets/website/69c2d48ba81567d28893e15cd0baf517c39f52ee.jpg",
+    "byline": "Olivia Rhye • 20 Jan 2026",
+    "title": "UX review presentations",
+    "description": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+    "tags": [
+      {
+        "text": "Design",
+        "style": {
+          "color": "#6941c6",
+          "background": "#f9f5ff",
+          "borderColor": "#e9d7fe"
+        }
+      },
+      {
+        "text": "Research",
+        "style": {
+          "color": "#3538cd",
+          "background": "#eef4ff",
+          "borderColor": "#c7d7fe"
+        }
+      },
+      {
+        "text": "Presentation",
+        "style": {
+          "color": "#c11574",
+          "background": "#fdf2fa",
+          "borderColor": "#fcceee"
+        }
+      }
+    ],
+    "href": "/blog/ux-review-presentations"
+  },
+  {
+    "sourceId": "1121:236112",
+    "image": "/assets/website/a4c52ab3a3c522719b54dd45b1795921034a3f00.png",
+    "byline": "Phoenix Baker • 19 Jan 2025",
+    "title": "Migrating to Linear 101",
+    "description": "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get...",
+    "tags": [
+      {
+        "text": "Design",
+        "style": {
+          "color": "#026aa2",
+          "background": "#f0f9ff",
+          "borderColor": "#b9e6fe"
+        }
+      },
+      {
+        "text": "Research",
+        "style": {
+          "color": "#c11574",
+          "background": "#fdf2fa",
+          "borderColor": "#fcceee"
+        }
+      }
+    ],
+    "href": null
+  },
+  {
+    "sourceId": "1121:236113",
+    "image": "/assets/website/4f7cb156af7440d6883d7ce6e71818b4d55fde88.jpg",
+    "byline": "Lana Steiner • 18 Jan 2025",
+    "title": "Building your API stack",
+    "description": "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...",
+    "tags": [
+      {
+        "text": "Software",
+        "style": {
+          "color": "#067647",
+          "background": "#ecfdf3",
+          "borderColor": "#abefc6"
+        }
+      },
+      {
+        "text": "Research",
+        "style": {
+          "color": "#c11574",
+          "background": "#fdf2fa",
+          "borderColor": "#fcceee"
+        }
+      }
+    ],
+    "href": null
+  },
+  {
+    "sourceId": "1121:236490",
+    "image": "/assets/website/0f4f2fcb6049962790ac0a2810925489622b792c.jpg",
+    "byline": "Olivia Rhye • 20 Jan 2026",
+    "title": "Bill Walsh leadership lessons",
+    "description": "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
+    "tags": [
+      {
+        "text": "Leadership",
+        "style": {
+          "color": "#6941c6",
+          "background": "#f9f5ff",
+          "borderColor": "#e9d7fe"
+        }
+      },
+      {
+        "text": "Management",
+        "style": {
+          "color": "#363f72",
+          "background": "#f8f9fc",
+          "borderColor": "#d5d9eb"
+        }
+      }
+    ],
+    "href": null
+  },
+  {
+    "sourceId": "1121:236524",
+    "image": "/assets/website/9f4ea61beb99ae8c2da093d59eccf06f640e117f.jpg",
+    "byline": "Olivia Rhye • 20 Jan 2026",
+    "title": "PM mental models",
+    "description": "Mental models are simple expressions of complex processes or relationships.",
+    "tags": [
+      {
+        "text": "Product",
+        "style": {
+          "color": "#026aa2",
+          "background": "#f0f9ff",
+          "borderColor": "#b9e6fe"
+        }
+      },
+      {
+        "text": "Research",
+        "style": {
+          "color": "#3538cd",
+          "background": "#eef4ff",
+          "borderColor": "#c7d7fe"
+        }
+      },
+      {
+        "text": "Frameworks",
+        "style": {
+          "color": "#b93815",
+          "background": "#fef6ee",
+          "borderColor": "#f9dbaf"
+        }
+      }
+    ],
+    "href": null
+  },
+  {
+    "sourceId": "1121:236510",
+    "image": "/assets/website/ec3b79fff1564d645f4f2bda89407b5d61d9afd9.jpg",
+    "byline": "Olivia Rhye • 20 Jan 2026",
+    "title": "What is wireframing?",
+    "description": "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
+    "tags": [
+      {
+        "text": "Design",
+        "style": {
+          "color": "#6941c6",
+          "background": "#f9f5ff",
+          "borderColor": "#e9d7fe"
+        }
+      },
+      {
+        "text": "Research",
+        "style": {
+          "color": "#3538cd",
+          "background": "#eef4ff",
+          "borderColor": "#c7d7fe"
+        }
+      }
+    ],
+    "href": null
+  },
+  {
+    "sourceId": "1121:236560",
+    "image": "/assets/website/54e0943ca661c94f801320e0a56b7ad7c9f5f2c3.jpg",
+    "byline": "Olivia Rhye • 20 Jan 2026",
+    "title": "How collaboration makes us better designers",
+    "description": "Collaboration can make our teams stronger, and our individual designs better.",
+    "tags": [
+      {
+        "text": "Design",
+        "style": {
+          "color": "#6941c6",
+          "background": "#f9f5ff",
+          "borderColor": "#e9d7fe"
+        }
+      },
+      {
+        "text": "Research",
+        "style": {
+          "color": "#3538cd",
+          "background": "#eef4ff",
+          "borderColor": "#c7d7fe"
+        }
+      }
+    ],
+    "href": null
+  },
+  {
+    "sourceId": "1121:236574",
+    "image": "/assets/website/ba1ddf4cdff400161fdff3d4a651265bb53152a4.jpg",
+    "byline": "Olivia Rhye • 20 Jan 2026",
+    "title": "Our top 10 Javascript frameworks to use",
+    "description": "JavaScript frameworks make development easy with extensive features and functionalities.",
+    "tags": [
+      {
+        "text": "Software",
+        "style": {
+          "color": "#067647",
+          "background": "#ecfdf3",
+          "borderColor": "#abefc6"
+        }
+      },
+      {
+        "text": "Tools",
+        "style": {
+          "color": "#c11574",
+          "background": "#fdf2fa",
+          "borderColor": "#fcceee"
+        }
+      },
+      {
+        "text": "SaaS",
+        "style": {
+          "color": "#c11574",
+          "background": "#fdf2fa",
+          "borderColor": "#fcceee"
+        }
+      }
+    ],
+    "href": null
+  },
+  {
+    "sourceId": "1121:236546",
+    "image": "/assets/website/6c182a988411c2aed7dc0e0f005cbffe45f81c90.jpg",
+    "byline": "Olivia Rhye • 20 Jan 2026",
+    "title": "Podcast: Creating a better CX Community",
+    "description": "Starting a community doesn’t need to be complicated, but how do you get started?",
+    "tags": [
+      {
+        "text": "Podcasts",
+        "style": {
+          "color": "#6941c6",
+          "background": "#f9f5ff",
+          "borderColor": "#e9d7fe"
+        }
+      },
+      {
+        "text": "Customer Success",
+        "style": {
+          "color": "#363f72",
+          "background": "#f8f9fc",
+          "borderColor": "#d5d9eb"
+        }
+      }
+    ],
+    "href": null
+  }
+]

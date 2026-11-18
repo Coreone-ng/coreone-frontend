@@ -23,6 +23,7 @@
   color: white;
 }
 .copy h2 {
+  max-width: 566px;
   font-size: 60px;
   line-height: 75px;
   letter-spacing: -1.2px;

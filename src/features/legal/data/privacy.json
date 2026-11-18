@@ -1,0 +1,134 @@
+{
+  "sourceId": "52:30747",
+  "title": "Privacy Policy",
+  "description": "The agreement that governs your access to CoreOne, the people\nwho depend on you, and the people behind us. Please read it carefully.",
+  "updated": "12 October 2026",
+  "sections": [
+    {
+      "id": "52-30822",
+      "sourceId": "52:30822",
+      "label": "SECTION 01",
+      "title": "Introduction",
+      "paragraphs": [
+        "1.1 This Privacy Policy explains how [Company legal name] (“Coreone”, “we”, “us”, “our”) collects, uses, shares and protects personal data when you visit our website, create an account, or use the Coreone cloud-based financial management platform (the “Services”).\n1.2 We handle personal data in line with the Nigeria Data Protection Act 2023 (the “NDPA”), the General Application and Implementation Directive 2025 issued by the Nigeria Data Protection Commission (“NDPC”), and other applicable Nigerian law.\n1.3Please read this Policy together with our Terms of Service. If you do not agree with it, please do not use the Services.\n"
+      ]
+    },
+    {
+      "id": "52-30830",
+      "sourceId": "52:30830",
+      "label": "SECTION 02",
+      "title": "Who we are and our role",
+      "paragraphs": [
+        "2.1 Controller. For information about you as a visitor, account holder or user (such as your account details, usage data, billing details and messages to us), we are the data controller.\n2.2 Processor. Businesses use Coreone to record their financial information, which includes personal data about their own customers, vendors, staff and others (“Customer Data”). For Customer Data, the business that holds the account (the “Business”) decides why and how the data is used, and we process it on the Business’s behalf as a data processor under our Terms of Service and data processing terms.\n2.3 If you are a Business’s customer or vendor. If your details are held in a Business’s Coreone account (for example, you are that Business’s customer and appear on an invoice), that Business is responsible for your data. Please contact them first. We will help them respond to your request.\n2.4 [Company legal name], RC [number], [registered address]. Data Protection Officer: [name], [privacy email address].\n"
+      ]
+    },
+    {
+      "id": "57-10412",
+      "sourceId": "57:10412",
+      "label": "SECTION 03",
+      "title": "Personal data we collect",
+      "paragraphs": [
+        "3.2 Sensitive data. We do not ask for sensitive personal data (such as health, religious or biometric data). Bank statements and receipts can contain such details by accident, for example in a payment description. Please do not upload more than your bookkeeping needs.\n3.3 Data about others. If you give us personal data about other people, such as customers, vendors or staff, you confirm that you are entitled to do so.\n"
+      ]
+    },
+    {
+      "id": "57-10420",
+      "sourceId": "57:10420",
+      "label": "SECTION 04",
+      "title": "How we use personal data and why",
+      "paragraphs": [
+        "4.2 Automated processing. OCR and statement parsing only produce suggestions. You review them before anything is posted to your ledger. We do not make decisions about you by solely automated means that have legal or similarly significant effects.\n4.3 AI. [CONFIRM: We do not use Customer Data to train artificial-intelligence models for other customers or for general purposes.]\n4.4 Tax and e-invoicing. We store Tax IDs separately from ordinary contact details so invoices carry the information Nigerian tax rules call for. We do not currently submit invoices to the Nigeria Revenue Service (NRS) or Rev360. If we introduce e-invoicing submission, we will do it only when you enable it, and we will update this Policy first.\n"
+      ]
+    },
+    {
+      "id": "57-10404",
+      "sourceId": "57:10404",
+      "label": "SECTION 05",
+      "title": " How we share personal data",
+      "paragraphs": [
+        "5.1 We do not sell personal data.\n5.2 Inside your Business. People you invite to your Business can see data according to the role you give them. The Account Owner can see user activity and the audit trail.\n5.3 Service providers. We use trusted providers to run the Services. They may only use personal data on our instructions and under written agreements. They include providers of:\ncloud hosting and database services\nsecure file storage\nOCR and document-reading services\nemail and messaging delivery\nanalytics and error monitoring\ncustomer support tools\npayment processing, for subscription billing and, when available, payment links\n\n[List provider names, or give a link to a current sub-processor list.]\n5.4 Legal and regulatory. We may disclose personal data to the NRS, the NDPC, courts, law enforcement or other authorities where the law requires it, or to protect our rights, users or the public.\n\n5.5 Business changes. If Coreone is involved in a merger, acquisition or sale of assets, personal data may transfer to the new owner, who must honour this Policy. We will tell you beforehand.\n\n5.6 At your instruction. We share data when you tell us to, for example when you invite your accountant or create a payment link through a payment provider."
+      ]
+    },
+    {
+      "id": "57-10428",
+      "sourceId": "57:10428",
+      "label": "SECTION 06",
+      "title": " Transfers outside Nigeria",
+      "paragraphs": [
+        "6.1Some of our providers may store or process data outside Nigeria. When personal data leaves Nigeria, we do this only as the NDPA allows, for example where the destination country gives adequate protection, or under binding contractual safeguards or another lawful transfer mechanism. [State hosting regions once known.]\n"
+      ]
+    },
+    {
+      "id": "57-10444",
+      "sourceId": "57:10444",
+      "label": "SECTION 07",
+      "title": "Security",
+      "paragraphs": [
+        "7.1 Our measures. We protect personal data with measures that include:\nencryption of data in transit\nsecure storage of uploaded files\nsecure hashing of passwords\nrole-based permissions, and separation between Businesses so one Business cannot reach another’s data\nrate limiting and validation of payment notifications\naudit logging of important actions\nstoring tax and integration credentials securely and apart from ordinary application data\n[CONFIRM: encryption of stored data at rest]\n\n7.2 Breaches. No system is completely secure. If a personal data breach is likely to put people’s rights at risk, we will notify the NDPC and affected people as the NDPA requires, including within 72 hours for notice to the NDPC where that rule applies.\n7.3 Your part. Please keep your password private, use the roles to give people only the access they need, and tell us at once if you suspect unauthorised access.\n"
+      ]
+    },
+    {
+      "id": "57-10468",
+      "sourceId": "57:10468",
+      "label": "SECTION 08",
+      "title": "How long we keep personal data",
+      "paragraphs": [
+        "8.2 Tax record-keeping. Nigerian tax and accounting rules generally expect businesses to keep financial records for at least six years. Those records belong to the Business, so the Business must export and keep the copies the law requires before closing its account.\n8.3 Posted entries. Posted ledger entries cannot be edited or deleted silently. They are corrected by reversal or adjustment so the audit trail stays intact. Where this limits a deletion request, we will explain why.\n"
+      ]
+    },
+    {
+      "id": "57-10396",
+      "sourceId": "57:10396",
+      "label": "SECTION 09",
+      "title": "Your rights",
+      "paragraphs": [
+        "9.1 Under the NDPA you have the right to:\nbe informed about how your data is used\naccess your personal data and receive a copy\nhave inaccurate data corrected\nhave data erased, where the law allows\nrestrict or object to certain processing, including direct marketing\nreceive your data in a portable format, where applicable\nwithdraw consent at any time, without affecting earlier processing\nnot be subject to a decision based solely on automated processing that significantly affects you\n9.2 How to exercise them. To use a right, email [privacy email address]. We may ask you to verify your identity, and we will respond within the time the law requires.\n9.3 Customer Data. If your data is Customer Data, we will pass your request to the relevant Business and help them respond.\n9.4 Complaints. You can complain to the Nigeria Data Protection Commission (www.ndpc.gov.ng). We would welcome the chance to put things right first, so please contact us.\n"
+      ]
+    },
+    {
+      "id": "57-10476",
+      "sourceId": "57:10476",
+      "label": "SECTION 10",
+      "title": "Cookies and similar technologies",
+      "paragraphs": [
+        "10.2We set non-essential cookies only with your consent. You can change your choices through the cookie settings in the Services or your browser.\n"
+      ]
+    },
+    {
+      "id": "57-10436",
+      "sourceId": "57:10436",
+      "label": "SECTION 11",
+      "title": "Children",
+      "paragraphs": [
+        "11.1 The Services are for businesses and are not directed at anyone under 18. We do not knowingly collect personal data from children. If you think we have, please contact us and we will delete it.\n"
+      ]
+    },
+    {
+      "id": "57-10500",
+      "sourceId": "57:10500",
+      "label": "SECTION 12",
+      "title": "Links to other sites",
+      "paragraphs": [
+        "12.1 The Services may link to third-party sites or services. We are not responsible for their privacy practices, so please read their policies.\n"
+      ]
+    },
+    {
+      "id": "57-10460",
+      "sourceId": "57:10460",
+      "label": "SECTION 13",
+      "title": "Changes to this Policy",
+      "paragraphs": [
+        "13.1 We may update this Policy. For material changes, we will notify you by email or in the Services at least [30] days before they take effect. The date at the top shows when it was last updated.\n"
+      ]
+    },
+    {
+      "id": "57-10484",
+      "sourceId": "57:10484",
+      "label": "SECTION 14",
+      "title": "Contact us",
+      "paragraphs": [
+        "14.1 Questions or requests: [privacy email address]. Data Protection Officer: [name]. Post: [Company legal name], [registered address].\n"
+      ]
+    }
+  ]
+}

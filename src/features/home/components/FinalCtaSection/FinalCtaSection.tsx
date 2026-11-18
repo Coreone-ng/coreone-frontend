@@ -1,24 +1,37 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 import { Action } from "@/components/ui/Action/Action";
 import { Eyebrow } from "@/components/ui/SectionHeading/SectionHeading";
 import { site } from "@/config/site";
 import { CtaArtwork } from "./CtaArtwork";
 import styles from "./FinalCtaSection.module.css";
 
-export function FinalCtaSection() {
+export function FinalCtaSection({
+  eyebrow = "A clearer picture starts here",
+  title = (
+    <>
+      Ready to get your
+      <br />
+      books in order?
+    </>
+  ),
+  actionLabel = "Create Your Free Account",
+  href = site.destinations.signup,
+}: {
+  eyebrow?: string;
+  title?: ReactNode;
+  actionLabel?: string;
+  href?: string | null;
+} = {}) {
   return (
     <section className={styles.section} aria-labelledby="cta-title">
       <div className={styles.card}>
         <CtaArtwork />
         <div className={styles.copy}>
-          <Eyebrow>A clearer picture starts here</Eyebrow>
-          <h2 id="cta-title">
-            Ready to get your
-            <br />
-            books in order?
-          </h2>
-          <Action href={site.destinations.signup} arrow>
-            Create Your Free Account
+          <Eyebrow>{eyebrow}</Eyebrow>
+          <h2 id="cta-title">{title}</h2>
+          <Action href={href} arrow>
+            {actionLabel}
           </Action>
         </div>
         <div className={styles.phone}>

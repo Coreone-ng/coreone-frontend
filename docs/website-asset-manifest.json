@@ -1,0 +1,932 @@
+[
+  {
+    "hash": "ca7e0533f2addfe1febabcad01a1012d8763efbe",
+    "file": "assets/images/ca7e0533f2addfe1febabcad01a1012d8763efbe.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "30:16650",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 118273,
+    "width": 1264,
+    "height": 848,
+    "localFile": "/assets/website/ca7e0533f2addfe1febabcad01a1012d8763efbe.jpg"
+  },
+  {
+    "hash": "57c53b63ec8c48d367efb0a6592d25089226242f",
+    "file": "assets/images/57c53b63ec8c48d367efb0a6592d25089226242f.png",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "30:16780",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/png",
+    "bytes": 1748816,
+    "width": 960,
+    "height": 1280,
+    "localFile": "/assets/website/57c53b63ec8c48d367efb0a6592d25089226242f.png"
+  },
+  {
+    "hash": "fc4fc76649f1cdb22cac9a1f8844ea5f55884598",
+    "file": "assets/images/fc4fc76649f1cdb22cac9a1f8844ea5f55884598.png",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "30:16789",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/png",
+    "bytes": 1946841,
+    "width": 960,
+    "height": 1280,
+    "localFile": "/assets/website/fc4fc76649f1cdb22cac9a1f8844ea5f55884598.png"
+  },
+  {
+    "hash": "7ff63c9617f04814886aec99b7c9e09539c7b530",
+    "file": "assets/images/7ff63c9617f04814886aec99b7c9e09539c7b530.png",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "30:16798",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/png",
+    "bytes": 1847383,
+    "width": 1536,
+    "height": 864,
+    "localFile": "/assets/website/7ff63c9617f04814886aec99b7c9e09539c7b530.png"
+  },
+  {
+    "hash": "59197b632d24d41e0cb0db15b7f69cb7771aaf9e",
+    "file": "assets/images/59197b632d24d41e0cb0db15b7f69cb7771aaf9e.png",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "30:16807",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/png",
+    "bytes": 2079962,
+    "width": 1024,
+    "height": 1536,
+    "localFile": "/assets/website/59197b632d24d41e0cb0db15b7f69cb7771aaf9e.png"
+  },
+  {
+    "hash": "df964c345b3f0cd335c27c1209d705a4b75c3450",
+    "file": "assets/images/df964c345b3f0cd335c27c1209d705a4b75c3450.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "30:16995",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 2185948,
+    "width": 2000,
+    "height": 1333,
+    "localFile": "/assets/website/df964c345b3f0cd335c27c1209d705a4b75c3450.jpg"
+  },
+  {
+    "hash": "b8bebef4670d96dfb59099a5932db3e1dcbf1bc6",
+    "file": "assets/images/b8bebef4670d96dfb59099a5932db3e1dcbf1bc6.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "30:17003",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 7786125,
+    "width": 4096,
+    "height": 2734,
+    "localFile": "/assets/website/b8bebef4670d96dfb59099a5932db3e1dcbf1bc6.jpg"
+  },
+  {
+    "hash": "a65c037522134b92b9b276911e8bfdada93ed581",
+    "file": "assets/images/a65c037522134b92b9b276911e8bfdada93ed581.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "30:17011",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 7437478,
+    "width": 4096,
+    "height": 2731,
+    "localFile": "/assets/website/a65c037522134b92b9b276911e8bfdada93ed581.jpg"
+  },
+  {
+    "hash": "f0420085d1cdbc1e0deb089733450f4e14390b1e",
+    "file": "assets/images/f0420085d1cdbc1e0deb089733450f4e14390b1e.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "30:17020",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 7804142,
+    "width": 4096,
+    "height": 2726,
+    "localFile": "/assets/website/f0420085d1cdbc1e0deb089733450f4e14390b1e.jpg"
+  },
+  {
+    "hash": "2c875fce8fafbc19f3319e1d79d89b275ec79710",
+    "file": "assets/images/2c875fce8fafbc19f3319e1d79d89b275ec79710.png",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "1119:215886",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/png",
+    "bytes": 836675,
+    "width": 1600,
+    "height": 3263,
+    "localFile": "/assets/website/2c875fce8fafbc19f3319e1d79d89b275ec79710.png"
+  },
+  {
+    "hash": "dbc515b644c1229963ab4f330b9c8d63490bd668",
+    "file": "assets/images/dbc515b644c1229963ab4f330b9c8d63490bd668.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "39:7188",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 111991,
+    "width": 1264,
+    "height": 848,
+    "localFile": "/assets/website/dbc515b644c1229963ab4f330b9c8d63490bd668.jpg"
+  },
+  {
+    "hash": "6424b0d14893954b1bbf127484daab7d652e2e3f",
+    "file": "assets/images/6424b0d14893954b1bbf127484daab7d652e2e3f.png",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "I1121:231631;2840:378007;1211:423",
+        "propertyPath": "properties.fills.1",
+        "visible": true
+      }
+    ],
+    "mime": "image/png",
+    "bytes": 90082,
+    "width": 640,
+    "height": 640,
+    "localFile": "/assets/website/6424b0d14893954b1bbf127484daab7d652e2e3f.png"
+  },
+  {
+    "hash": "442dff4a58f185ae964fb22d7c5d939687fbee53",
+    "file": "assets/images/442dff4a58f185ae964fb22d7c5d939687fbee53.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "I1121:231631;1422:464",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "1121:236625",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 189864,
+    "width": 1440,
+    "height": 1152,
+    "localFile": "/assets/website/442dff4a58f185ae964fb22d7c5d939687fbee53.jpg"
+  },
+  {
+    "hash": "eaab8f14010496eb9054953d335828536efc9655",
+    "file": "assets/images/eaab8f14010496eb9054953d335828536efc9655.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "I1121:231631;3951:436318;3951:437312",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "I1121:236632;3951:437495",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 112149,
+    "width": 1200,
+    "height": 800,
+    "localFile": "/assets/website/eaab8f14010496eb9054953d335828536efc9655.jpg"
+  },
+  {
+    "hash": "08a3b47613f2d0f6aced2c3c467602e3aa1638f1",
+    "file": "assets/images/08a3b47613f2d0f6aced2c3c467602e3aa1638f1.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "I1121:231631;3951:420519;3947:418556;1142:93199",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "I1121:231631;3951:420352;1142:93199",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "I1121:236634;3947:418501;1142:93199",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "I1121:236644;1211:423",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 25754,
+    "width": 640,
+    "height": 640,
+    "localFile": "/assets/website/08a3b47613f2d0f6aced2c3c467602e3aa1638f1.jpg"
+  },
+  {
+    "hash": "8e5709bc39bd97b7babaafdcc89adde870301011",
+    "file": "assets/images/8e5709bc39bd97b7babaafdcc89adde870301011.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "I1121:231631;3951:437796;3951:437698",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "I1121:236640;3951:437708",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 176941,
+    "width": 1200,
+    "height": 1800,
+    "localFile": "/assets/website/8e5709bc39bd97b7babaafdcc89adde870301011.jpg"
+  },
+  {
+    "hash": "92f9d44d896aad9fd5981c841633a846ddb6994b",
+    "file": "assets/images/92f9d44d896aad9fd5981c841633a846ddb6994b.png",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "I1121:231633;1398:9661;1390:660",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "I1121:231641;1398:9333;1390:634",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/png",
+    "bytes": 837842,
+    "width": 1440,
+    "height": 960,
+    "localFile": "/assets/website/92f9d44d896aad9fd5981c841633a846ddb6994b.png"
+  },
+  {
+    "hash": "a4c52ab3a3c522719b54dd45b1795921034a3f00",
+    "file": "assets/images/a4c52ab3a3c522719b54dd45b1795921034a3f00.png",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "I1121:231633;1398:9662;1390:660",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "I1121:231641;1398:9334;1390:634",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/png",
+    "bytes": 812069,
+    "width": 1440,
+    "height": 960,
+    "localFile": "/assets/website/a4c52ab3a3c522719b54dd45b1795921034a3f00.png"
+  },
+  {
+    "hash": "4f7cb156af7440d6883d7ce6e71818b4d55fde88",
+    "file": "assets/images/4f7cb156af7440d6883d7ce6e71818b4d55fde88.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "I1121:231633;1398:9663;1390:660",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "I1121:231641;1398:9336;1390:634",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 15596,
+    "width": 800,
+    "height": 533,
+    "localFile": "/assets/website/4f7cb156af7440d6883d7ce6e71818b4d55fde88.jpg"
+  },
+  {
+    "hash": "0f4f2fcb6049962790ac0a2810925489622b792c",
+    "file": "assets/images/0f4f2fcb6049962790ac0a2810925489622b792c.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "I1121:231633;1398:9664;1390:660",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "I1121:231641;1398:9337;1390:634",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 63447,
+    "width": 800,
+    "height": 533,
+    "localFile": "/assets/website/0f4f2fcb6049962790ac0a2810925489622b792c.jpg"
+  },
+  {
+    "nodeId": "30:14654",
+    "file": "assets/vectors/30_14654.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 709,
+    "logicalHeight": 16,
+    "useAbsoluteBounds": false,
+    "bytes": 26139,
+    "localFile": "/assets/website/30_14654.svg"
+  },
+  {
+    "nodeId": "59:12606",
+    "file": "assets/vectors/59_12606.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 2025,
+    "localFile": "/assets/website/59_12606.svg"
+  },
+  {
+    "nodeId": "59:12618",
+    "file": "assets/vectors/59_12618.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 749,
+    "localFile": "/assets/website/59_12618.svg"
+  },
+  {
+    "nodeId": "59:12624",
+    "file": "assets/vectors/59_12624.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 1848,
+    "localFile": "/assets/website/59_12624.svg"
+  },
+  {
+    "nodeId": "59:12630",
+    "file": "assets/vectors/59_12630.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 1658,
+    "localFile": "/assets/website/59_12630.svg"
+  },
+  {
+    "nodeId": "30:16881",
+    "file": "assets/vectors/30_16881.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 1498.7347412109375,
+    "logicalHeight": 1475.73974609375,
+    "useAbsoluteBounds": false,
+    "bytes": 1559990,
+    "localFile": "/assets/website/30_16881.svg"
+  },
+  {
+    "nodeId": "350:60011",
+    "file": "assets/vectors/350_60011.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 96,
+    "logicalHeight": 96,
+    "useAbsoluteBounds": false,
+    "bytes": 6997,
+    "localFile": "/assets/website/350_60011.svg"
+  },
+  {
+    "nodeId": "39:7196",
+    "file": "assets/vectors/39_7196.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 116,
+    "logicalHeight": 20,
+    "useAbsoluteBounds": false,
+    "bytes": 8162,
+    "localFile": "/assets/website/39_7196.svg"
+  },
+  {
+    "nodeId": "59:15784",
+    "file": "assets/vectors/59_15784.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 514,
+    "logicalHeight": 164,
+    "useAbsoluteBounds": false,
+    "bytes": 2979,
+    "localFile": "/assets/website/59_15784.svg"
+  },
+  {
+    "nodeId": "30:16911",
+    "file": "assets/vectors/30_16911.svg",
+    "status": "exported",
+    "reason": "primitive-vector-layer",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 852,
+    "logicalHeight": 299,
+    "useAbsoluteBounds": false,
+    "bytes": 961,
+    "localFile": "/assets/website/30_16911.svg"
+  },
+  {
+    "nodeId": "1121:236647",
+    "file": "assets/vectors/1121_236647.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 40,
+    "logicalHeight": 40,
+    "useAbsoluteBounds": false,
+    "bytes": 2471,
+    "localFile": "/assets/website/1121_236647.svg"
+  },
+  {
+    "nodeId": "1121:236648",
+    "file": "assets/vectors/1121_236648.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 40,
+    "logicalHeight": 40,
+    "useAbsoluteBounds": false,
+    "bytes": 2873,
+    "localFile": "/assets/website/1121_236648.svg"
+  },
+  {
+    "nodeId": "1121:236649",
+    "file": "assets/vectors/1121_236649.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 40,
+    "logicalHeight": 40,
+    "useAbsoluteBounds": false,
+    "bytes": 3450,
+    "localFile": "/assets/website/1121_236649.svg"
+  },
+  {
+    "nodeId": "39:7302",
+    "file": "assets/vectors/39_7302.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 36,
+    "logicalHeight": 36,
+    "useAbsoluteBounds": false,
+    "bytes": 1012,
+    "localFile": "/assets/website/39_7302.svg"
+  },
+  {
+    "nodeId": "39:7305",
+    "file": "assets/vectors/39_7305.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 36,
+    "logicalHeight": 36,
+    "useAbsoluteBounds": false,
+    "bytes": 1309,
+    "localFile": "/assets/website/39_7305.svg"
+  },
+  {
+    "nodeId": "39:7307",
+    "file": "assets/vectors/39_7307.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 36,
+    "logicalHeight": 36,
+    "useAbsoluteBounds": false,
+    "bytes": 3848,
+    "localFile": "/assets/website/39_7307.svg"
+  },
+  {
+    "nodeId": "39:7309",
+    "file": "assets/vectors/39_7309.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 36,
+    "logicalHeight": 36,
+    "useAbsoluteBounds": false,
+    "bytes": 1673,
+    "localFile": "/assets/website/39_7309.svg"
+  },
+  {
+    "nodeId": "27:4245",
+    "file": "assets/vectors/27_4245.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 1577,
+    "localFile": "/assets/website/27_4245.svg"
+  },
+  {
+    "nodeId": "27:4281",
+    "file": "assets/vectors/27_4281.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 1265,
+    "localFile": "/assets/website/27_4281.svg"
+  },
+  {
+    "nodeId": "27:4325",
+    "file": "assets/vectors/27_4325.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 1054,
+    "localFile": "/assets/website/27_4325.svg"
+  },
+  {
+    "nodeId": "27:4368",
+    "file": "assets/vectors/27_4368.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 2093,
+    "localFile": "/assets/website/27_4368.svg"
+  },
+  {
+    "nodeId": "27:4412",
+    "file": "assets/vectors/27_4412.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 1185,
+    "localFile": "/assets/website/27_4412.svg"
+  },
+  {
+    "nodeId": "27:4448",
+    "file": "assets/vectors/27_4448.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 1966,
+    "localFile": "/assets/website/27_4448.svg"
+  },
+  {
+    "nodeId": "27:4484",
+    "file": "assets/vectors/27_4484.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 1073,
+    "localFile": "/assets/website/27_4484.svg"
+  },
+  {
+    "nodeId": "27:4520",
+    "file": "assets/vectors/27_4520.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 872,
+    "localFile": "/assets/website/27_4520.svg"
+  },
+  {
+    "nodeId": "27:4564",
+    "file": "assets/vectors/27_4564.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 862,
+    "localFile": "/assets/website/27_4564.svg"
+  },
+  {
+    "nodeId": "27:4639",
+    "file": "assets/vectors/27_4639.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 1641,
+    "localFile": "/assets/website/27_4639.svg"
+  },
+  {
+    "nodeId": "28:4715",
+    "file": "assets/vectors/28_4715.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 44,
+    "logicalHeight": 44,
+    "useAbsoluteBounds": false,
+    "bytes": 1867,
+    "localFile": "/assets/website/28_4715.svg"
+  },
+  {
+    "hash": "e9807aefab52e7350f1bf1f2dbe26ebed413f651",
+    "file": "assets/images/e9807aefab52e7350f1bf1f2dbe26ebed413f651.png",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "30:14333",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      },
+      {
+        "nodeId": "39:5359",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/png",
+    "bytes": 29034,
+    "width": 493,
+    "height": 732,
+    "localFile": "/assets/website/e9807aefab52e7350f1bf1f2dbe26ebed413f651.png"
+  },
+  {
+    "hash": "69c2d48ba81567d28893e15cd0baf517c39f52ee",
+    "file": "assets/images/69c2d48ba81567d28893e15cd0baf517c39f52ee.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "I1121:236110;1390:483",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 39662,
+    "width": 800,
+    "height": 533,
+    "localFile": "/assets/website/69c2d48ba81567d28893e15cd0baf517c39f52ee.jpg"
+  },
+  {
+    "hash": "9f4ea61beb99ae8c2da093d59eccf06f640e117f",
+    "file": "assets/images/9f4ea61beb99ae8c2da093d59eccf06f640e117f.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "1121:236525",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 127507,
+    "width": 1440,
+    "height": 1085,
+    "localFile": "/assets/website/9f4ea61beb99ae8c2da093d59eccf06f640e117f.jpg"
+  },
+  {
+    "hash": "ec3b79fff1564d645f4f2bda89407b5d61d9afd9",
+    "file": "assets/images/ec3b79fff1564d645f4f2bda89407b5d61d9afd9.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "1121:236511",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 64252,
+    "width": 800,
+    "height": 533,
+    "localFile": "/assets/website/ec3b79fff1564d645f4f2bda89407b5d61d9afd9.jpg"
+  },
+  {
+    "hash": "54e0943ca661c94f801320e0a56b7ad7c9f5f2c3",
+    "file": "assets/images/54e0943ca661c94f801320e0a56b7ad7c9f5f2c3.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "1121:236561",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 73242,
+    "width": 800,
+    "height": 533,
+    "localFile": "/assets/website/54e0943ca661c94f801320e0a56b7ad7c9f5f2c3.jpg"
+  },
+  {
+    "hash": "ba1ddf4cdff400161fdff3d4a651265bb53152a4",
+    "file": "assets/images/ba1ddf4cdff400161fdff3d4a651265bb53152a4.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "1121:236575",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 62978,
+    "width": 800,
+    "height": 533,
+    "localFile": "/assets/website/ba1ddf4cdff400161fdff3d4a651265bb53152a4.jpg"
+  },
+  {
+    "hash": "6c182a988411c2aed7dc0e0f005cbffe45f81c90",
+    "file": "assets/images/6c182a988411c2aed7dc0e0f005cbffe45f81c90.jpg",
+    "status": "exported",
+    "occurrences": [
+      {
+        "nodeId": "1121:236547",
+        "propertyPath": "properties.fills.0",
+        "visible": true
+      }
+    ],
+    "mime": "image/jpeg",
+    "bytes": 58629,
+    "width": 800,
+    "height": 533,
+    "localFile": "/assets/website/6c182a988411c2aed7dc0e0f005cbffe45f81c90.jpg"
+  },
+  {
+    "nodeId": "I1121:236110;1390:363",
+    "file": "assets/vectors/I1121_236110_1390_363.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 24,
+    "logicalHeight": 24,
+    "useAbsoluteBounds": false,
+    "bytes": 256,
+    "localFile": "/assets/website/I1121_236110_1390_363.svg"
+  },
+  {
+    "nodeId": "36:4699",
+    "file": "assets/vectors/36_4699.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 20,
+    "logicalHeight": 20,
+    "useAbsoluteBounds": false,
+    "bytes": 752,
+    "localFile": "/assets/website/36_4699.svg"
+  },
+  {
+    "nodeId": "I39:5360;36:4718",
+    "file": "assets/vectors/I39_5360_36_4718.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 21,
+    "logicalHeight": 2,
+    "useAbsoluteBounds": false,
+    "bytes": 382,
+    "localFile": "/assets/website/I39_5360_36_4718.svg"
+  },
+  {
+    "nodeId": "I39:5360;36:4730",
+    "file": "assets/vectors/I39_5360_36_4730.svg",
+    "status": "exported",
+    "reason": "composite-vector-artwork",
+    "sourceVisible": true,
+    "effectiveVisible": true,
+    "logicalWidth": 21,
+    "logicalHeight": 21,
+    "useAbsoluteBounds": false,
+    "bytes": 406,
+    "localFile": "/assets/website/I39_5360_36_4730.svg"
+  }
+]

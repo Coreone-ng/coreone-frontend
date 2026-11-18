@@ -1,0 +1,44 @@
+[
+  {
+    "id": "faq-1",
+    "question": "What is Coreone?",
+    "answer": "Coreone is a cloud-based financial platform that helps businesses manage their accounting, finances and operations in one place. Log in from a browser, and your invoices, expenses, bank activity and reports are right there, nothing to install, nothing saved only on one computer.",
+    "placeholder": false
+  },
+  {
+    "id": "faq-2",
+    "question": "Which plan is right for me?",
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "placeholder": true
+  },
+  {
+    "id": "faq-3",
+    "question": "Do I need accounting knowledge to use Coreone?",
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "placeholder": true
+  },
+  {
+    "id": "faq-4",
+    "question": "Can I bring in my accountant?",
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "placeholder": true
+  },
+  {
+    "id": "faq-5",
+    "question": "Is my data secure?",
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "placeholder": true
+  },
+  {
+    "id": "faq-6",
+    "question": "Will Coreone handle my taxes?",
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "placeholder": true
+  },
+  {
+    "id": "faq-7",
+    "question": "Is there a free trial?",
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "placeholder": true
+  }
+]

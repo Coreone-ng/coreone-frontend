@@ -6,3 +6,5 @@ out/
 !.env.example
 .DS_Store
 test-results/
+tools/figma-exporter/
+/design-handoff/

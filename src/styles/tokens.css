@@ -2,6 +2,7 @@
   /* Temporary fallbacks: licensed BR Firma / Clash Grotesk were not supplied. */
   --font-body: "Avenir Next", "Segoe UI", Arial, sans-serif;
   --font-badge: "Avenir Next", "Segoe UI", Arial, sans-serif;
+  --font-document: "DM Sans", "Avenir Next", "Segoe UI", Arial, sans-serif;
   --color-ink: #0a132b;
   --color-body: #535862;
   --color-muted: #667085;

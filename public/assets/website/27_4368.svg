@@ -1,0 +1,20 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Background">
+<path d="M12 0.5H32C38.3513 0.5 43.5 5.64873 43.5 12V32C43.5 38.3513 38.3513 43.5 32 43.5H12C5.64873 43.5 0.5 38.3513 0.5 32V12C0.5 5.64873 5.64873 0.5 12 0.5Z" stroke="#D5D7DA"/>
+<g id="bank">
+<g id="vuesax/linear/bank">
+<g id="bank_2">
+<path id="Vector" d="M22.37 12.1501L31.37 15.7501C31.72 15.8901 32 16.3101 32 16.6801V20.0001C32 20.5501 31.55 21.0001 31 21.0001H13C12.45 21.0001 12 20.5501 12 20.0001V16.6801C12 16.3101 12.28 15.8901 12.63 15.7501L21.63 12.1501C21.83 12.0701 22.17 12.0701 22.37 12.1501Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_2" d="M32 32H12V29C12 28.45 12.45 28 13 28H31C31.55 28 32 28.45 32 29V32Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#717680"/>
+<path id="Vector_3" d="M14 28V21" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_4" d="M18 28V21" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_5" d="M22 28V21" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_6" d="M26 28V21" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_7" d="M30 28V21" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_8" d="M11 32H33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+<path id="Vector_9" d="M23.5 17C23.5 17.8284 22.8284 18.5 22 18.5C21.1716 18.5 20.5 17.8284 20.5 17C20.5 16.1716 21.1716 15.5 22 15.5C22.8284 15.5 23.5 16.1716 23.5 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" stroke="#292D32"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
