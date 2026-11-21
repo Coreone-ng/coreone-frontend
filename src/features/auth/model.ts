@@ -68,7 +68,10 @@ export function signupErrors(values: Record<string, unknown>): Fields {
   return errors;
 }
 export function destination(snapshot: Snapshot) {
-  if (snapshot.user) return "/onboarding/complete";
+  if (snapshot.user)
+    return snapshot.user.email_verified && snapshot.user.phone_verified
+      ? "/dashboard"
+      : "/onboarding/verify";
   if (snapshot.totp) return "/sign-in/totp";
   if (snapshot.pending) return "/onboarding/verify";
   return "/setup";

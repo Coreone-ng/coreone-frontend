@@ -470,9 +470,13 @@ export function AuthPage({ mode }: { mode: AuthMode }) {
     if (!snapshot || loading) return;
     if (
       snapshot.user &&
-      ["setup", "sign-in", "verify", "change-phone", "totp"].includes(mode)
-    )
-      router.replace("/onboarding/complete");
+      ["setup", "sign-in", "verify", "change-phone", "totp"].includes(mode) &&
+      (mode !== "verify" ||
+        (snapshot.user.email_verified && snapshot.user.phone_verified))
+    ) {
+      router.replace(destination(snapshot));
+      return;
+    }
     if (mode === "totp" && !snapshot.totp) router.replace("/sign-in");
     if (
       mode === "change-phone" &&
@@ -621,7 +625,9 @@ export function AuthPage({ mode }: { mode: AuthMode }) {
   const redirecting =
     !!snapshot &&
     ((!!snapshot.user &&
-      ["setup", "sign-in", "verify", "change-phone", "totp"].includes(mode)) ||
+      ["setup", "sign-in", "verify", "change-phone", "totp"].includes(mode) &&
+      (mode !== "verify" ||
+        (snapshot.user.email_verified && snapshot.user.phone_verified))) ||
       (mode === "totp" && !snapshot.totp) ||
       (mode === "change-phone" &&
         snapshot.pending?.next_step !== "verify_phone") ||
@@ -1161,13 +1167,13 @@ export function AuthPage({ mode }: { mode: AuthMode }) {
           <p>{snapshot.user?.first_name}, welcome to CoreOne.</p>
           <p>
             {snapshot.next_step === "dashboard"
-              ? "Your account is ready. The dashboard is not available on this website yet."
-              : "Your next step is to set up your business. Business setup is not available on this website yet."}
+              ? "Your account is ready. Explore the dashboard using clearly labeled sample data."
+              : "Your next step is to set up your business. You can explore the sample dashboard while business setup awaits the next handoff."}
           </p>
           <p>No plan or payment is required for account verification.</p>
         </div>
-        <a href="/" className={styles.linkButton}>
-          Back to CoreOne
+        <a href="/dashboard" className={styles.linkButton}>
+          Proceed to dashboard
         </a>
         <button
           type="button"

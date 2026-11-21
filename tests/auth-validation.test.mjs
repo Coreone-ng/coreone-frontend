@@ -85,7 +85,10 @@ test("routing follows authentication state without a plan or payment branch", ()
   assert.equal(destination({ totp: true }), "/sign-in/totp");
   for (const next_step of ["dashboard", "create_business"])
     assert.equal(
-      destination({ user: { id: "test" }, next_step }),
-      "/onboarding/complete",
+      destination({
+        user: { id: "test", email_verified: true, phone_verified: true },
+        next_step,
+      }),
+      "/dashboard",
     );
 });

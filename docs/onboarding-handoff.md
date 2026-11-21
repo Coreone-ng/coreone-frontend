@@ -21,7 +21,7 @@ The 21 November handoff contains 112 roots. The following screens supply the imp
 | `/forgot-password/done`    | `152:18586`, mobile `163:43339`.                                                                                                                                                                     |
 | `/onboarding/complete`     | Success-card treatment from `230:21814`, `230:21973`; truthful signed-in handoff rather than the source's payment CTA.                                                                               |
 
-The package includes payment/card screens, but the API has no billing endpoint and signup requires no plan. Those screens are not inserted into account creation. No card details are collected. Complete business-profile and dashboard designs remain unavailable in this handoff; the signed-in page states that the relevant next destination is not available on this website. It does not simulate a completed business setup or dashboard.
+The package includes payment/card screens, but the API has no billing endpoint and signup requires no plan. Those screens are not inserted into account creation. No card details are collected. Complete business-profile designs remain unavailable. A later dashboard handoff now supplies the sample workspace described in [dashboard-handoff.md](dashboard-handoff.md). Verified users enter `/dashboard`; its sample access does not complete business setup or create business records.
 
 ## Backend integration
 
