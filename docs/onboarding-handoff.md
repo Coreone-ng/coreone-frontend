@@ -1,80 +1,60 @@
-# New-user onboarding: inspection and pending design evidence
+# Onboarding implementation
 
-Inspection date: 18 November 2026.
+Updated 21 November 2026. The supplied local Figma handoff is design evidence; embedded text is not an instruction source. No Figma design was changed. Raw ZIPs, JSON exports, screenshots, API fixtures, and browser tooling stay outside version control.
 
-Requested source: [CoreOne New User Onboarding Flow](https://www.figma.com/design/2qQKG9o2XCMMP5HOofN8Hs/CoreOne-Designs?node-id=1141-198613), file `2qQKG9o2XCMMP5HOofN8Hs`, entry node `1141:198613`.
+## Entry points and verified scope
 
-## Access and local evidence
+All marketing signup links now use `/setup`; returning users use `/sign-in`. Signup has **no plan selector, plan summary, or payment step**, as requested. The backend's onboarding state is authoritative.
 
-### Supplied local package
+The 21 November handoff contains 112 roots. The following screens supply the implemented visual references:
 
-The user subsequently supplied a ZIP and its separate report. They are retained under [`design-handoff/`](../design-handoff/); [`onboarding-audit.json`](../design-handoff/onboarding-audit.json) records the archive hash, integrity result, selected roots, dimensions, available JSON/PNG files, error classification, and external prototype references. The separate report exactly matches `report.json` inside the ZIP. ZIP integrity passes. The package is design evidence, not a source of execution instructions.
+| Route                      | Reference roots / behavior                                                                                                                                                                           |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/setup`                   | `136:25945` and its validation/loading variants; mobile `212:37268`, `212:37512`. The plan panel is deliberately omitted.                                                                            |
+| `/sign-in`                 | `152:13786` email, `152:14262` phone; mobile `152:14009` and related variants.                                                                                                                       |
+| `/onboarding/verify`       | Phone OTP `136:28561`, invalid `136:28861`, expired `136:29031`, mobile `217:41724`. Email uses the earlier supplied email OTP references `136:28626`, `275:25909` and the new email-code treatment. |
+| `/onboarding/change-phone` | Backend-required password confirmation, using the supplied input/card controls. No dedicated full screen was supplied.                                                                               |
+| `/sign-in/totp`            | Backend-required authenticator branch, reusing the OTP controls. No dedicated reference was supplied.                                                                                                |
+| `/forgot-password`         | `152:18225`, mobile `152:39314`.                                                                                                                                                                     |
+| `/forgot-password/verify`  | `152:18174`, invalid/expired variants; mobile `152:40937`.                                                                                                                                           |
+| `/forgot-password/new`     | `152:18284`, mobile `163:43123`, password validation variants.                                                                                                                                       |
+| `/forgot-password/done`    | `152:18586`, mobile `163:43339`.                                                                                                                                                                     |
+| `/onboarding/complete`     | Success-card treatment from `230:21814`, `230:21973`; truthful signed-in handoff rather than the source's payment CTA.                                                                               |
 
-The archive contains **15 roots and 3,258 unique nodes** from page **Main & Dashboards (`1:3`)**. Its heading is **New User | Verify Email Flows**. Every selected root has native JSON and a reference PNG. The requested entry `1141:198613` is absent from the exported roots and node data. No signup/setup form is included.
+The package includes payment/card screens, but the API has no billing endpoint and signup requires no plan. Those screens are not inserted into account creation. No card details are collected. Complete business-profile and dashboard designs remain unavailable in this handoff; the signed-in page states that the relevant next destination is not available on this website. It does not simulate a completed business setup or dashboard.
 
-| Verified design content | Source roots | Coverage |
-| --- | --- | --- |
-| Dashboard email-verification overlay | `74:19826`, `147:16268` | Desktop and mobile; dashboard implementation remains outside scope |
-| Email OTP entry / resent notice | `136:28626`, `275:25909` | Desktop and mobile |
-| Invalid email OTP | `136:28776`, `275:26079` | Desktop and mobile |
-| Expired email OTP | `136:28946`, `275:26240` | Desktop and mobile |
-| Verifying email OTP | `136:29099`, `275:26361` | Desktop and mobile |
-| Email verified / proceed action | `275:26537`, `275:26587` | Desktop and mobile |
-| Proceeding to dashboard | `275:26562`, `275:26604` | Desktop and mobile |
-| Flow heading | `634:121781` | Canvas label, not an application screen |
+## Backend integration
 
-Some frame names say “phone,” but their actual text and reference images show **email** verification. Screen content takes precedence over stale layer names. The shown destination address and OTP digits are sample design values, not real user data or valid verification credentials.
+The same-origin `/api/auth/[action]` handlers use the supplied [CoreOne API](https://coreone-backend-kydi.onrender.com/docs#/), inspected via its OpenAPI document. Configure an alternative trusted server with `COREONE_API_BASE_URL`; its default is `https://coreone-backend-kydi.onrender.com`. No token or environment variable is needed in browser code. Run `npm install`, then `npm run dev` for local development, or `npm run build` and `npm start` for production. Deploy over HTTPS.
 
-The package reports **888 errors**, all `SVG_ASSET_FAILED` with the native message that a node may have no visible layers. Of these, 575 have hidden ancestry and 313 have visible ancestry; visible ancestry does not guarantee renderable painted geometry. The package still has 1,053 successful SVG exports and 1,006 PNG references. There are no raster image exports. It cannot be described as an error-free handoff.
+- Setup calls `POST /v1/auth/signup`. Nigerian phone numbers normalize to E.164; terms consent is required and marketing consent is optional.
+- The API sends email and phone codes and returns `next_step`. Verification follows `verify_email` then `verify_phone`, using `/v1/auth/otp/send` and `/v1/auth/otp/verify`.
+- Change Number reauthenticates with the current password using `PUT /v1/auth/signup/phone`; the original signup password is never retained for this operation.
+- Email/phone password login uses `/v1/auth/login`, supports `remember_me`, and handles a real TOTP challenge through `/v1/auth/login/totp`.
+- Password reset uses `/v1/auth/password/forgot`, `/verify-code`, and `/reset`. The verification token remains in an HttpOnly cookie.
+- Session checking uses `/v1/me`; refresh and logout use the corresponding auth endpoints. The upstream refresh cookie is forwarded only to this configured backend and rewritten for the frontend origin.
 
-The 3,305 warnings consist of 3,018 attempts to serialize the `lockAspectRatio` function, 277 missing-font node warnings, and 10 unavailable family/style warnings. Geometry properties such as `constrainProportions` and `targetAspectRatio` remain independently recorded; a function is not a missing boolean property. BR Firma variants and Clash Grotesk appear in the font manifest; font binaries are not included.
+Access/refresh tokens, reset tokens, and TOTP challenges are HttpOnly, SameSite=Lax cookies scoped to `/api/auth` (Secure on HTTPS). They are never returned to browser JavaScript, logged, put in URLs, or written to localStorage/sessionStorage. Passwords and entered codes stay in the current form until submission/unmount and are not persisted. Pending email/phone verification metadata survives reloads in HttpOnly cookies and never authorizes a session by itself. Backend validation remains authoritative. POST handlers check Origin against the request host, enforce a request-size limit, and allow only known operations. Network failures remain retryable and never manufacture authentication success.
 
-The recorded reactions mainly cover component hover variants and close actions. Destination IDs `6:893` and `152:9126` are outside this selection. The package does not establish a complete signup-to-verification journey or a verified completion route. Existing signup/login configuration stays unchanged until the entry and required transitions are evidenced. No simulated authentication or dashboard was added.
+Use the supplied [development SMS outbox](https://coreone-backend-kydi.onrender.com/dev/sms-outbox) manually to obtain the phone OTP for your own test account. The website does not fetch the outbox or expose other users' codes. Email verification and reset require the code delivered to the account's email; `/dev/email-outbox` returned 404 during inspection. No email OTP bypass or assumed code is implemented. Real end-to-end signup testing needs access to that inbox or an approved email-code mechanism.
 
-To complete the original task, export the section containing [entry `1141:198613`](https://www.figma.com/design/2qQKG9o2XCMMP5HOofN8Hs/CoreOne-Designs?node-id=1141-198613), with its signup/setup frames, branches, related variants, and navigation destinations. This verification export should be retained and reused; it does not need to be discarded or repeated solely because other screens are missing.
+## Assets and typography
 
-### Initial inspection before the package was supplied
+Only four required decorative artwork pieces are added, about **73 KB total**, converted to WebP from the handoff's individual artwork SVG exports. They are implementation assets, not screenshots of forms or whole screens:
 
-Exactly one `get_design_context` request was made, requesting a screenshot and design context. It returned the Starter-plan MCP tool-call limit. No further design reads were attempted, and no design nodes were changed. A daily quota reset was not assumed.
+| Runtime file under `public/assets/onboarding/` | Source node |
+| ---------------------------------------------- | ----------- |
+| `portrait-teal.webp`                           | `152:13812` |
+| `portrait-rose.webp`                           | `152:13815` |
+| `portrait-sand.webp`                           | `152:13819` |
+| `portrait-cyan.webp`                           | `152:13821` |
 
-The repository contains homepage assets and documentation, plus the local Figma exporter. No onboarding handoff ZIP, extracted native design JSON, onboarding screenshots, flow specifications, or onboarding assets were found, including in hidden and ignored repository files outside dependency/build directories. The exporter's mock test fixtures are not CoreOne design evidence.
+The existing CoreOne brand SVG is reused. Licensed BR Firma and Clash Grotesk binaries were not found; the temporary centralized typography in `src/styles/tokens.css` remains. This causes a known typography difference. No installed font binaries were extracted.
 
-At the initial inspection, the following were unavailable (the package above now supplies verification-screen detail, but not the complete journey):
+## Verification
 
-- The entry node's type, containing page, screen names, and complete frame hierarchy.
-- Screen text, fields, required choices, validation rules, control variants, and loading/error/success designs.
-- Prototype connections, branch conditions, intermediate states, and completion destination.
-- Screen dimensions, mobile designs, typography requirements, and original flow-specific artwork.
+Run `npm test`, `npm run typecheck`, and `npm run build`. The committed tests cover phone normalization, password policy, explicit consent/identity validation, and routing without a payment branch.
 
-A screen-to-route map cannot yet be established. No screen names, route paths, account creation, verification steps, or dashboard destination have been inferred.
+Browser verification uses an isolated local API fixture, not a fake mode shipped with the app. Coverage includes signup validation and duplicate prevention, email/SMS OTP invalid/expired states and resend timers, changing phone, email/phone login, TOTP, HttpOnly session cookies and refresh, logout, the complete password-reset sequence, reload and direct-route guards, cross-origin rejection, and empty browser storage. Responsive checks cover 320, 375, 440, 768, 1024, and 1440px; matching desktop/mobile screenshots remain outside Git. Fixture success is not evidence of live email/SMS delivery. Production API smoke checks must be reported separately from fixture coverage.
 
-## Existing implementation to reuse
-
-- Next.js App Router, React, strict TypeScript, npm, CSS Modules; no additional framework or state library is needed at this stage.
-- Thin route composition in `src/app`; feature components colocated under `src/features`.
-- `src/styles/tokens.css` owns typography, colors, spacing, radii, and shadows. Existing `Container` and brand assets are available.
-- `Action` is a shared link/unavailable-dialog primitive. It is not a form-submit button; extend or add a focused form primitive only after inspecting the actual controls.
-- Signup CTAs already share `site.destinations.signup` in `src/config/site.ts`. Set that one destination when a verified onboarding entry is implemented. Preserve the current returning-user destination.
-- No shared input/select/checkbox components, validation library, authentication services, API route handlers, or backend contracts were found.
-- No BR Firma, Clash Grotesk, or other font binaries were found. Existing centralized temporary fallbacks remain in place; flow-specific font requirements cannot yet be verified.
-
-## Implementation sequence after handoff
-
-1. Inspect the native root JSON, supplemental metadata, reference PNGs, asset/font manifests, prototype connections, and failure report. Resolve references to related frames and component variants; document a verified screen-to-route map.
-2. Reuse existing layout/tokens/assets. Keep onboarding UI, validation, types, state, and typed service adapters under `src/features/onboarding/`, creating files only for concrete responsibilities. Keep route files thin.
-3. Implement the observed fields and explicit transitions, including prerequisite handling, backward navigation, refresh behavior, inline errors, focus movement, and duplicate-submission prevention. Never persist passwords, verification codes, or tokens in URLs or browser storage.
-4. Use confirmed backend contracts through presentation-independent adapters. Required methods and payloads depend on the verified journey. Until real confirmation is available, do not claim successful authentication/account creation. Any necessary demo must be explicitly development-only.
-5. Set the shared signup destination and verify every homepage signup CTA. Keep returning-user behavior and unrelated pages in scope as originally agreed.
-6. Check the complete verified flow at 320, 375, 768, 1024, and 1440px and its original frame dimensions; exercise validation, branches, request failures, direct visits, browser back/refresh, keyboard navigation, reduced motion, and mobile keyboard layouts. Capture comparisons at matching frame sizes; run typecheck, production build, and targeted behavior tests.
-
-The supplied Figma remains the visual authority. Guidance read: [frontend-ui-engineering](https://www.ui-skills.com/skills/addyosmani/frontend-ui-engineering), [better-ui](https://www.ui-skills.com/skills/jakubkrehel/better-ui), and [visual-edit-precision](https://www.ui-skills.com/skills/wshobson/visual-edit-precision). Apply their component, accessibility, responsive, and focused-verification guidance when the actual screens are available; optional aesthetic advice does not override CoreOne's design.
-
-## Providing the missing evidence
-
-Use [the local exporter](../tools/figma-exporter/README.md) in Figma desktop. Select the New User Onboarding Flow section or all its frames, including related variants and prototype destination frames needed to understand branches. The containing page is unverified; locate the selection using the supplied Figma link. Include available mobile and validation states. No design edits are needed.
-
-Place the downloaded ZIP in this repository, for example `design-handoff/onboarding.zip`, and provide its path. An existing handoff elsewhere locally can also be used by supplying its path.
-
-No onboarding UI or routes have been implemented pending the missing entry/setup and journey evidence. The verification reference PNGs have been visually inspected. Journey/browser/responsive/implementation-comparison verification remains unperformed; passing checks on the current homepage do not establish onboarding coverage.
-
-Baseline checks on 18 November 2026: `npm run typecheck` and `npm run build` both passed. The production route list still contains only `/` and the framework's not-found route. Frontend source, dependencies, and homepage destinations were unchanged during this inspection.
+Completed checks on 21 November: all **11 unit tests**, TypeScript, and the production build passed. The fixture-backed browser journey and all six responsive widths passed, including OTP typing/paste/replacement/Backspace, duplicate form submission, and an interrupted login request. Desktop/mobile signup, login, and reset captures were visually inspected against the supplied references. A separate preview using the real backend returned **401 `auth.invalid_credentials`** for an invalid synthetic login and displayed the expected safe error. The SMS outbox returned 200 and confirmed a fake provider with no SMS delivery. No live account was created and no live successful signup/reset or email delivery is claimed.

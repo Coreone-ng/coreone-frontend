@@ -4,8 +4,8 @@ export const site = {
   description:
     "Smart, simple accounting for modern businesses. Track invoices, manage expenses, connect your bank accounts and run reports with CoreOne.",
   destinations: {
-    signup: null,
-    login: null,
+    signup: "/setup",
+    login: "/sign-in",
     demoVideo: null,
     about: "/about",
     blog: "/blog",
