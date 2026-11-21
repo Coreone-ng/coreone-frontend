@@ -7,6 +7,84 @@
   background: #f7f7f7;
   min-height: 100svh;
 }
+.dialog .button.logoutConfirmAction {
+  background: #f04438;
+  border-color: #f04438;
+  color: white;
+}
+.quickActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+.quickActions h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.quickButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.quickActions .quickButtons .quickAccounting {
+  background: #2465ff;
+}
+.quickActions .quickButtons .quickTaxation {
+  background: #18b4aa;
+}
+.quickActions .quickButtons .quickExpenses {
+  background: #eff8ff;
+  color: #156dff;
+}
+.quickActions .quickButtons .quickExpenses > .icon {
+  filter: none;
+}
+.quickActions .quickButtons .quickTeams {
+  background: #7e35f5;
+}
+.mobileViewAll {
+  display: none;
+  border: 0;
+  background: none;
+  min-height: 44px;
+  color: #008c84;
+  font-size: 13px;
+}
+@media (max-width: 1250px) {
+  .quickActions {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  .quickActions {
+    padding: 20px 16px;
+    gap: 12px;
+  }
+  .quickActions h2 {
+    width: 100%;
+    font-size: 16px;
+  }
+  .quickButtons {
+    gap: 8px;
+  }
+  .quickButtons .button {
+    padding-inline: 12px;
+    font-size: 13px;
+  }
+  .quickButtons:not(.expanded) > :nth-child(n + 3),
+  .overviewStats:not(.expanded) > :nth-child(n + 3) {
+    display: none;
+  }
+  .mobileViewAll {
+    display: block;
+  }
+  .metricViewAll {
+    margin: -12px 0 20px auto;
+  }
+}
 .workspace button,
 .dialog button {
   font: inherit;
@@ -318,6 +396,11 @@
   text-decoration: underline;
   text-underline-offset: 3px;
   min-height: 36px;
+}
+.previewBanner a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .breadcrumb {
   display: flex;

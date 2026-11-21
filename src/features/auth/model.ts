@@ -1,3 +1,15 @@
+export type AuthMode =
+  | "setup"
+  | "sign-in"
+  | "verify"
+  | "change-phone"
+  | "totp"
+  | "forgot"
+  | "reset-verify"
+  | "new-password"
+  | "reset-done"
+  | "complete";
+
 export type NextStep =
   "verify_email" | "verify_phone" | "create_business" | "dashboard";
 export type Pending = {
@@ -17,6 +29,7 @@ export type User = {
   phone_verified: boolean;
 };
 export type Snapshot = {
+  organization?: { id: string; legal_name: string };
   user?: User;
   next_step?: NextStep;
   pending?: Pending;
@@ -70,7 +83,9 @@ export function signupErrors(values: Record<string, unknown>): Fields {
 export function destination(snapshot: Snapshot) {
   if (snapshot.user)
     return snapshot.user.email_verified && snapshot.user.phone_verified
-      ? "/dashboard"
+      ? snapshot.next_step === "create_business"
+        ? "/onboarding/account-type"
+        : "/dashboard"
       : "/onboarding/verify";
   if (snapshot.totp) return "/sign-in/totp";
   if (snapshot.pending) return "/onboarding/verify";

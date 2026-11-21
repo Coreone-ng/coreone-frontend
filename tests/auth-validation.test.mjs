@@ -89,6 +89,8 @@ test("routing follows authentication state without a plan or payment branch", ()
         user: { id: "test", email_verified: true, phone_verified: true },
         next_step,
       }),
-      "/dashboard",
+      next_step === "create_business"
+        ? "/onboarding/account-type"
+        : "/dashboard",
     );
 });

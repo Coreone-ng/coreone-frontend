@@ -36,6 +36,7 @@ export function DashboardShell({ children }: { children: ReactNode }) {
   const [pending, setPending] = useState("");
   const [notification, setNotification] = useState(false);
   const [loggingOut, setLoggingOut] = useState(false);
+  const [confirmLogout, setConfirmLogout] = useState(false);
   const [error, setError] = useState("");
   const accounting = path.includes("bank-transactions");
   const name = `${user.first_name} ${user.last_name}`.trim();
@@ -173,7 +174,11 @@ export function DashboardShell({ children }: { children: ReactNode }) {
             <strong>{name}</strong>
             <small>{user.email}</small>
           </span>
-          <button onClick={logout} disabled={loggingOut} aria-label="Sign out">
+          <button
+            onClick={() => setConfirmLogout(true)}
+            disabled={loggingOut}
+            aria-label="Sign out"
+          >
             <Icon name="logout" />
           </button>
         </div>
@@ -189,7 +194,10 @@ export function DashboardShell({ children }: { children: ReactNode }) {
           </button>
           <div className={styles.greeting}>
             <p>
-              Hello, <strong>Swiftroletech Limited</strong>
+              Hello,{" "}
+              <strong>
+                {snapshot.organization?.legal_name || "Swiftroletech Limited"}
+              </strong>
             </p>
             <div>
               {name}
@@ -215,10 +223,16 @@ export function DashboardShell({ children }: { children: ReactNode }) {
               <div>
                 <strong>{name}</strong>
                 <span>{user.email}</span>
+                <button
+                  className={styles.textButton}
+                  onClick={() => setPending("View Profile is coming next")}
+                >
+                  View Profile
+                </button>
                 <AppButton
                   variant="secondary"
                   disabled={loggingOut}
-                  onClick={logout}
+                  onClick={() => setConfirmLogout(true)}
                 >
                   {loggingOut ? "Signing out…" : "Sign out"}
                 </AppButton>
@@ -231,8 +245,12 @@ export function DashboardShell({ children }: { children: ReactNode }) {
             <span>
               <strong>Sample data.</strong> Changes stay in this tab and reset
               on refresh.{" "}
-              {snapshot.next_step === "create_business" &&
-                "Business setup is pending the next handoff."}
+              {snapshot.next_step === "create_business" && (
+                <>
+                  Your business is not set up yet.{" "}
+                  <Link href="/onboarding/account-type">Complete setup</Link>.
+                </>
+              )}
             </span>
             <button onClick={() => setPending("More flows are on the way")}>
               What’s pending?
@@ -258,7 +276,9 @@ export function DashboardShell({ children }: { children: ReactNode }) {
           onClose={() => setPending("")}
         >
           <ul className={styles.pendingList}>
-            <li>Business setup and workspace selection.</li>
+            <li>
+              Individual profile saving, logo upload, and workspace selection.
+            </li>
             <li>Invoice, payment, and note previews and final submission.</li>
             <li>
               Remaining accounting, invoicing, expenses, reporting,
@@ -270,8 +290,8 @@ export function DashboardShell({ children }: { children: ReactNode }) {
             <li>Analytics, activity history, and notification destinations.</li>
           </ul>
           <p className={styles.small}>
-            Current records and bank flows are clearly labeled samples. No
-            business data is submitted.
+            Current records and bank flows are clearly labeled samples. These
+            previews do not submit accounting records.
           </p>
           <AppButton onClick={() => setPending("")}>Got it</AppButton>
         </Dialog>
@@ -280,6 +300,39 @@ export function DashboardShell({ children }: { children: ReactNode }) {
           <PendingDialog title={pending} onClose={() => setPending("")} />
         )
       )}{" "}
+      {confirmLogout && (
+        <Dialog
+          title="Logout Your Account?"
+          sample={false}
+          description="Are you sure you want to logout your account?"
+          onClose={() => {
+            if (!loggingOut) setConfirmLogout(false);
+          }}
+        >
+          <div className={styles.dialogActions}>
+            <AppButton
+              variant="secondary"
+              disabled={loggingOut}
+              onClick={() => setConfirmLogout(false)}
+            >
+              Cancel
+            </AppButton>
+            <AppButton
+              variant="danger"
+              className={styles.logoutConfirmAction}
+              disabled={loggingOut}
+              onClick={logout}
+            >
+              {loggingOut ? "Signing out…" : "Yes, log me out"}
+            </AppButton>
+          </div>
+          {error && (
+            <p role="alert" className={styles.error}>
+              {error}
+            </p>
+          )}
+        </Dialog>
+      )}
       {notification && (
         <Dialog
           title="Sample notifications"

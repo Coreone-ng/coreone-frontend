@@ -1,6 +1,7 @@
 "use client";
 import { useId, useState } from "react";
-import { Icon, Panel, PendingDialog } from "./components";
+import { useRouter } from "next/navigation";
+import { AppButton, Icon, Panel, PendingDialog } from "./components";
 import styles from "./Dashboard.module.css";
 
 const months = [
@@ -17,8 +18,8 @@ const months = [
   "Nov",
   "Dec",
 ];
-const cashIn = [220, 240, 260, 280, 320, 330, 390, 430, 460, 410, 420, 490];
-const cashOut = [100, 120, 130, 140, 165, 175, 190, 170, 150, 145, 155, 210];
+const cashIn = [600, 620, 600, 650, 700, 650, 720, 730, 700, 720, 710, 800];
+const cashOut = [400, 420, 400, 410, 420, 410, 420, 430, 420, 430, 440, 500];
 function Plot({
   type,
   period,
@@ -31,13 +32,13 @@ function Plot({
     period === "This Quarter" ? 0.75 : period === "This Year" ? 1.4 : 1;
   const values = (
     type === "sales"
-      ? [120, 180, 210, 280, 300, 380, 450, 430, 500, 580, 570, 630]
+      ? [450, 600, 550, 650, 570, 680, 700, 750, 760, 790, 780, 820]
       : cashIn
   ).map((value) => value * factor);
   const width = type === "sales" ? 300 : 550;
   const x = (index: number) => 48 + (index * (width - 78)) / 11;
   const point = (value: number, index: number) =>
-    `${x(index)},${240 - value * 0.23}`;
+    `${x(index)},${240 - value * 0.215}`;
   const line = values.map(point).join(" ");
   const second = cashOut
     .map((value) => value * factor)
@@ -84,17 +85,17 @@ function Plot({
           <g key={index}>
             <rect
               x={x(index) - 12}
-              y={240 - value * 0.23}
+              y={240 - value * 0.215}
               width="14"
-              height={value * 0.23}
+              height={value * 0.215}
               rx="3"
               fill="#2476fa"
             />
             <rect
               x={x(index) + 4}
-              y={240 - cashOut[index] * factor * 0.4}
+              y={240 - cashOut[index] * factor * 0.215}
               width="14"
-              height={cashOut[index] * factor * 0.4}
+              height={cashOut[index] * factor * 0.215}
               rx="3"
               fill="#18b4ad"
             />
@@ -156,13 +157,13 @@ function ChartCard({
       </div>
       <div className={styles.legend}>
         <span>
-          <i style={{ background: type === "bars" ? "#2476fa" : "#27ae80" }} />
+          <i style={{ background: type === "bars" ? "#18b4ad" : "#27ae80" }} />
           {type === "cash" ? "Cash In" : type === "bars" ? "Expenses" : "Sales"}
         </span>
         {type !== "sales" && (
           <span>
             <i
-              style={{ background: type === "bars" ? "#18b4ad" : "#4aa2ec" }}
+              style={{ background: type === "bars" ? "#2476fa" : "#4aa2ec" }}
             />
             {type === "cash" ? "Cash Out" : "Income"}
           </span>
@@ -175,14 +176,63 @@ function ChartCard({
 }
 export function Overview() {
   const [pending, setPending] = useState("");
+  const [allActions, setAllActions] = useState(false);
+  const [allMetrics, setAllMetrics] = useState(false);
+  const router = useRouter();
   return (
     <>
-      <div className={styles.breadcrumb}>
-        <Icon name="dashboard" />
-        Dashboard
-      </div>
       <h1 className="sr-only">Dashboard overview</h1>
-      <div className={styles.overviewStats}>
+      <Panel className={styles.quickActions}>
+        <h2>YOUR QUICK ACTIONS</h2>
+        <div
+          id="quick-actions"
+          className={`${styles.quickButtons} ${allActions ? styles.expanded : ""}`}
+        >
+          {[
+            {
+              label: "Accounting",
+              icon: "quick-accounting",
+              style: "quickAccounting",
+            },
+            {
+              label: "Taxation",
+              icon: "quick-taxation",
+              style: "quickTaxation",
+            },
+            {
+              label: "Expenses & Bills",
+              icon: "quick-expenses",
+              style: "quickExpenses",
+            },
+            { label: "Teams", icon: "quick-teams", style: "quickTeams" },
+          ].map((item) => (
+            <AppButton
+              key={item.label}
+              className={styles[item.style]}
+              onClick={() =>
+                item.label === "Accounting"
+                  ? router.push("/dashboard/bank-transactions")
+                  : setPending(`${item.label} is coming next`)
+              }
+            >
+              <Icon name={item.icon} />
+              {item.label}
+            </AppButton>
+          ))}
+        </div>
+        <button
+          className={styles.mobileViewAll}
+          aria-expanded={allActions}
+          aria-controls="quick-actions"
+          onClick={() => setAllActions(!allActions)}
+        >
+          {allActions ? "View less actions" : "View all actions"}
+        </button>
+      </Panel>
+      <div
+        id="overview-metrics"
+        className={`${styles.overviewStats} ${allMetrics ? styles.expanded : ""}`}
+      >
         {[
           { title: "Total Balance", icon: "balance", color: "orange" },
           { title: "Income", icon: "income", color: "green" },
@@ -210,6 +260,14 @@ export function Overview() {
           </Panel>
         ))}
       </div>
+      <button
+        className={`${styles.mobileViewAll} ${styles.metricViewAll}`}
+        aria-expanded={allMetrics}
+        aria-controls="overview-metrics"
+        onClick={() => setAllMetrics(!allMetrics)}
+      >
+        {allMetrics ? "View less metrics" : "View all metrics"}
+      </button>
       <div className={styles.chartRow}>
         <ChartCard
           title="Cash Flow"

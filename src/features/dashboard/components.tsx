@@ -62,6 +62,7 @@ export function Dialog({
   drawer = false,
   leading,
   className = "",
+  sample = true,
 }: {
   title: string;
   description?: string;
@@ -70,6 +71,7 @@ export function Dialog({
   drawer?: boolean;
   leading?: ReactNode;
   className?: string;
+  sample?: boolean;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   const id = useId();
@@ -90,6 +92,7 @@ export function Dialog({
       ref={ref}
       className={`${styles.dialog} ${drawer ? styles.drawer : ""} ${className}`}
       aria-labelledby={id}
+      aria-describedby={description ? `${id}-description` : undefined}
       onCancel={(event) => {
         event.preventDefault();
         onClose();
@@ -116,10 +119,14 @@ export function Dialog({
         >
           ×
         </button>
-        <span className={styles.samplePill}>Sample workspace</span>
+        {sample && <span className={styles.samplePill}>Sample workspace</span>}
         {leading}
         <h2 id={id}>{title}</h2>
-        {description && <p className={styles.muted}>{description}</p>}
+        {description && (
+          <p id={`${id}-description`} className={styles.muted}>
+            {description}
+          </p>
+        )}
         {children}
       </div>
     </dialog>

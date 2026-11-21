@@ -5,18 +5,21 @@ export class AuthError extends Error {
   retryAfter: number;
   code?: string;
   verificationRequired: boolean;
+  status?: number;
   constructor(data: {
     message?: string;
     errors?: Fields;
     retry_after?: number;
     code?: string;
     verificationRequired?: boolean;
+    status?: number;
   }) {
     super(data.message || "Something went wrong. Please try again.");
     this.fields = data.errors || {};
     this.retryAfter = data.retry_after || 0;
     this.code = data.code;
     this.verificationRequired = !!data.verificationRequired;
+    this.status = data.status;
   }
 }
 export async function authRequest(
@@ -37,7 +40,7 @@ export async function authRequest(
     });
   }
   const data = await response.json();
-  if (!response.ok) throw new AuthError(data);
+  if (!response.ok) throw new AuthError({ ...data, status: response.status });
   return data;
 }
 export async function loadSession(): Promise<Snapshot> {

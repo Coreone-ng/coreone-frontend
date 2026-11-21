@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { businessErrors, type BusinessOptions } from "./business";
 import {
   normalizePhone,
   signupErrors,
@@ -138,6 +139,15 @@ export async function handleAuth(request: NextRequest, action: string) {
     clear(res, ["pending", "challenge", "reset", "resetToken", "done"]);
   };
   try {
+    if (action === "business-options" && request.method === "GET") {
+      const result = await upstream("/v1/onboarding/options", undefined, "GET");
+      return result.ok
+        ? response(await result.json())
+        : response(
+            { message: "We couldn’t load setup choices. Please retry." },
+            503,
+          );
+    }
     if (action === "session" && request.method === "GET") {
       const snapshot: Snapshot = {
         pending,
@@ -162,8 +172,36 @@ export async function handleAuth(request: NextRequest, action: string) {
             email_verified: user.email_verified,
             phone_verified: user.phone_verified,
           };
-          snapshot.next_step =
-            read("next") === "dashboard" ? "dashboard" : "create_business";
+          const organizations = await upstream("/v1/orgs", undefined, "GET", {
+            Authorization: `Bearer ${token}`,
+          });
+          if (organizations.status === 401) {
+            snapshot.user = undefined;
+            snapshot.needsRefresh = !!read("refresh");
+          } else if (!organizations.ok)
+            return response(
+              {
+                message: "We couldn’t check your business setup. Please retry.",
+              },
+              503,
+            );
+          else {
+            const { data } = await organizations.json();
+            if (!Array.isArray(data))
+              return response(
+                {
+                  message:
+                    "We couldn’t check your business setup. Please retry.",
+                },
+                503,
+              );
+            snapshot.next_step = data.length ? "dashboard" : "create_business";
+            if (data.length === 1)
+              snapshot.organization = {
+                id: data[0].id,
+                legal_name: data[0].legal_name,
+              };
+          }
         } else if (result.status === 401)
           snapshot.needsRefresh = !!read("refresh");
         else
@@ -216,6 +254,100 @@ export async function handleAuth(request: NextRequest, action: string) {
     };
     const password = text("password");
     switch (action) {
+      case "create-business": {
+        const token = read("access");
+        if (!token)
+          return response(
+            {
+              message: "Your session needs refreshing. Please try again.",
+              code: "auth.session_expired",
+            },
+            401,
+          );
+        const authorization = { Authorization: `Bearer ${token}` };
+        const identity = await upstream(
+          "/v1/me",
+          undefined,
+          "GET",
+          authorization,
+        );
+        if (identity.status === 401)
+          return response(
+            {
+              message: "Your session needs refreshing. Please try again.",
+              code: "auth.session_expired",
+            },
+            401,
+          );
+        if (!identity.ok)
+          return response(
+            { message: "We couldn’t check your account. Please retry." },
+            503,
+          );
+        const user = await identity.json();
+        if (!user.email_verified || !user.phone_verified)
+          return response(
+            {
+              message:
+                "Verify your email and phone before creating a business.",
+            },
+            403,
+          );
+        const choices = await upstream(
+          "/v1/onboarding/options",
+          undefined,
+          "GET",
+        );
+        if (!choices.ok)
+          return response(
+            { message: "We couldn’t load setup choices. Please retry." },
+            503,
+          );
+        const options: BusinessOptions = await choices.json();
+        body = {
+          legal_name: text("legal_name").trim(),
+          industry: text("industry"),
+          business_structure: text("business_structure"),
+          owner_role: text("owner_role"),
+          employee_range: text("employee_range"),
+          goals: input.goals,
+        };
+        errors = businessErrors(body, options);
+        if (Object.keys(errors).length)
+          return response(
+            { message: "Please check the highlighted fields.", errors },
+            422,
+          );
+        const existing = await upstream(
+          "/v1/orgs",
+          undefined,
+          "GET",
+          authorization,
+        );
+        if (existing.status === 401)
+          return response(
+            {
+              message: "Your session needs refreshing. Please try again.",
+              code: "auth.session_expired",
+            },
+            401,
+          );
+        if (!existing.ok)
+          return response(
+            { message: "We couldn’t check existing businesses. Please retry." },
+            503,
+          );
+        const list = await existing.json();
+        if (!Array.isArray(list.data))
+          return response(
+            { message: "We couldn’t check existing businesses. Please retry." },
+            503,
+          );
+        if (list.data.length)
+          return response({ ok: true, already_exists: true });
+        path = "/v1/orgs";
+        break;
+      }
       case "signup":
         body = {
           first_name: text("first_name").trim(),
@@ -346,6 +478,8 @@ export async function handleAuth(request: NextRequest, action: string) {
         422,
       );
     const headers: Record<string, string> = {};
+    if (action === "create-business")
+      headers.Authorization = `Bearer ${read("access")}`;
     if ((action === "refresh" || action === "logout") && read("refresh"))
       headers.Cookie = `coreone_refresh=${read("refresh")}`;
     if (action === "logout" && read("access"))
@@ -365,6 +499,12 @@ export async function handleAuth(request: NextRequest, action: string) {
             "new_password",
             "code",
             "accept_terms",
+            "legal_name",
+            "industry",
+            "business_structure",
+            "owner_role",
+            "employee_range",
+            "goals",
           ].includes(error.field)
         )
           fields[error.field] =
@@ -405,6 +545,8 @@ export async function handleAuth(request: NextRequest, action: string) {
       return res;
     }
     const res = response({ ok: true });
+    if (action === "create-business")
+      cookie(res, "next", "dashboard", 60 * 60 * 24 * 30);
     if (action === "signup") {
       cookie(
         res,

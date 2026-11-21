@@ -7,7 +7,7 @@ export async function GET(
   context: { params: Promise<{ action: string }> },
 ) {
   const { action } = await context.params;
-  return action === "session"
+  return ["session", "business-options"].includes(action)
     ? handleAuth(request, action)
     : NextResponse.json({ message: "Not found." }, { status: 404 });
 }
