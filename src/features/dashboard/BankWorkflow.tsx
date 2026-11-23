@@ -32,7 +32,7 @@ export function BankWorkflow({
   initial: "permissions" | "manual";
   onClose: () => void;
 }) {
-  const { setBankConnected, setImported } = useWorkspace();
+  const { setBankConnected, setImported, setDemo } = useWorkspace();
   const [step, setStep] = useState<Step>(initial);
   const [search, setSearch] = useState("");
   const [bank, setBank] = useState("uba");
@@ -47,10 +47,25 @@ export function BankWorkflow({
     if (step !== "connecting") return;
     const timer = setTimeout(() => {
       setBankConnected(true);
+      setDemo((current) => ({
+        ...current,
+        settings: {
+          ...current.settings,
+          linkedBanks: [
+            ...current.settings.linkedBanks.filter((row) => row.id !== bank),
+            {
+              id: bank,
+              name: chosen.name,
+              ending: "0673",
+              sync: "Just now · demo",
+            },
+          ],
+        },
+      }));
       setStep("connected");
     }, 1000);
     return () => clearTimeout(timer);
-  }, [step, setBankConnected]);
+  }, [step, setBankConnected, setDemo, bank, chosen.name]);
   const next = (target: Step) => {
     setStep(target);
     setError("");

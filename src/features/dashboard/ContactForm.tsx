@@ -8,9 +8,11 @@ import styles from "./Dashboard.module.css";
 
 export function ContactForm({
   contact,
+  onSaved,
   onClose,
 }: {
   contact?: Contact;
+  onSaved?: (contact: Contact) => void;
   onClose: () => void;
 }) {
   const { setContacts } = useWorkspace();
@@ -66,6 +68,7 @@ export function ContactForm({
         ? current.map((item) => (item.id === contact.id ? record : item))
         : [record, ...current],
     );
+    onSaved?.(record);
     setDone(true);
   }
   if (done)

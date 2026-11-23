@@ -87,6 +87,13 @@ export function Dialog({
       if (focus instanceof HTMLElement && focus.isConnected) focus.focus();
     };
   }, []);
+  useEffect(() => {
+    const dialog = ref.current;
+    if (dialog?.open) {
+      dialog.scrollTop = 0;
+      dialog.querySelector("h2")?.focus({ preventScroll: true });
+    }
+  }, [title]);
   return (
     <dialog
       ref={ref}
@@ -121,7 +128,9 @@ export function Dialog({
         </button>
         {sample && <span className={styles.samplePill}>Sample workspace</span>}
         {leading}
-        <h2 id={id}>{title}</h2>
+        <h2 id={id} tabIndex={-1}>
+          {title}
+        </h2>
         {description && (
           <p id={`${id}-description`} className={styles.muted}>
             {description}
@@ -214,7 +223,7 @@ export function Search({
 export function Status({ children }: { children: ReactNode }) {
   return (
     <span
-      className={`${styles.status} ${children === "Inactive" || children === "Overdue" ? styles.inactive : children === "Customer" || children === "Ongoing" ? styles.purple : children === "Vendor" || children === "Partially Paid" ? styles.pink : ""}`}
+      className={`${styles.status} ${children === "Inactive" || children === "Draft" || children === "Demo 2FA Disabled" ? styles.inactive : children === "Overdue" || children === "Not Balanced" ? styles.warning : children === "Customer" || children === "Ongoing" || children === "Issued" ? styles.purple : children === "Vendor" || children === "Partially Paid" ? styles.pink : ""}`}
     >
       • {children}
     </span>

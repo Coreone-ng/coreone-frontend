@@ -12,9 +12,12 @@ import { useRouter } from "next/navigation";
 import { loadSession } from "@/features/auth/client";
 import type { Snapshot } from "@/features/auth/model";
 import { sampleContacts, type Contact } from "./model";
+import { createDemoState, type DemoState } from "./demo";
 import styles from "./Dashboard.module.css";
 
 type Workspace = {
+  demo: DemoState;
+  setDemo: React.Dispatch<React.SetStateAction<DemoState>>;
   snapshot: Snapshot;
   contacts: Contact[];
   setContacts: React.Dispatch<React.SetStateAction<Contact[]>>;
@@ -30,6 +33,7 @@ export function useWorkspace() {
   return context;
 }
 export function WorkspaceProvider({ children }: { children: ReactNode }) {
+  const [demo, setDemo] = useState(createDemoState);
   const router = useRouter();
   const [snapshot, setSnapshot] = useState<Snapshot>();
   const [error, setError] = useState("");
@@ -97,6 +101,8 @@ export function WorkspaceProvider({ children }: { children: ReactNode }) {
   return (
     <Context.Provider
       value={{
+        demo,
+        setDemo,
         snapshot,
         contacts,
         setContacts,

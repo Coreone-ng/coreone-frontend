@@ -16,10 +16,11 @@ import {
   contactName,
   initials,
   money,
-  sampleInvoices,
   sampleNotes,
   samplePayments,
 } from "./model";
+import { invoiceAmount } from "./demo";
+import { InvoiceEditor } from "./Invoices";
 import { TransactionDraft } from "./TransactionDraft";
 import { useWorkspace } from "./WorkspaceProvider";
 import styles from "./Dashboard.module.css";
@@ -33,7 +34,7 @@ const formatDate = (date: string) =>
     timeZone: "UTC",
   }).format(new Date(`${date}T12:00:00Z`));
 export function CustomerDetails({ id }: { id: string }) {
-  const { contacts } = useWorkspace();
+  const { contacts, demo } = useWorkspace();
   const router = useRouter();
   const params = useSearchParams();
   const tab =
@@ -72,12 +73,15 @@ export function CustomerDetails({ id }: { id: string }) {
     setFilter("");
     setDate("");
   }
-  const invoices = sampleInvoices.filter(
-    (row) =>
-      row.number.toLowerCase().includes(query.toLowerCase()) &&
-      (!filter || row.status === filter) &&
-      (!date || row.date === date),
-  );
+  const invoices = demo.invoices
+    .filter((row) => row.customerId === id)
+    .map((row) => ({ ...row, amount: invoiceAmount(row) }))
+    .filter(
+      (row) =>
+        row.number.toLowerCase().includes(query.toLowerCase()) &&
+        (!filter || row.status === filter) &&
+        (!date || row.date === date),
+    );
   const payments = samplePayments.filter(
     (row) =>
       `${row.number} ${row.invoice}`
@@ -344,7 +348,9 @@ export function CustomerDetails({ id }: { id: string }) {
                               <button
                                 className={styles.recordButton}
                                 onClick={() =>
-                                  setPending("Invoice details are coming next")
+                                  router.push(
+                                    `/dashboard/invoicing?invoice=${encodeURIComponent(row.id)}`,
+                                  )
                                 }
                               >
                                 {row.number}
@@ -360,7 +366,9 @@ export function CustomerDetails({ id }: { id: string }) {
                                 className={styles.iconButton}
                                 aria-label={`Invoice actions ${row.id}`}
                                 onClick={() =>
-                                  setPending("Invoice actions are coming next")
+                                  router.push(
+                                    `/dashboard/invoicing?invoice=${encodeURIComponent(row.id)}`,
+                                  )
                                 }
                               >
                                 <Icon name="more" />
@@ -438,12 +446,19 @@ export function CustomerDetails({ id }: { id: string }) {
           onDeleted={() => router.replace("/dashboard/customers")}
         />
       )}{" "}
-      {draft && (
-        <TransactionDraft
-          kind={draft}
-          contact={contact}
+      {draft === "invoice" ? (
+        <InvoiceEditor
+          contactId={contact.id}
           onClose={() => setDraft(undefined)}
         />
+      ) : (
+        draft && (
+          <TransactionDraft
+            kind={draft}
+            contact={contact}
+            onClose={() => setDraft(undefined)}
+          />
+        )
       )}{" "}
       {pending && (
         <PendingDialog title={pending} onClose={() => setPending("")} />

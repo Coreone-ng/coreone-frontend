@@ -19,14 +19,14 @@ const navigation = [
     icon: "accounting",
     href: "/dashboard/bank-transactions",
   },
-  { label: "Invoicing", icon: "invoice" },
+  { label: "Invoicing", icon: "invoice", href: "/dashboard/invoicing" },
   { label: "Expenses & Bills", icon: "expenses" },
   { label: "Reporting", icon: "reports" },
   { label: "Administration", icon: "administration" },
-  { label: "Settings", icon: "settings" },
+  { label: "Settings", icon: "settings", href: "/dashboard/settings" },
 ];
 export function DashboardShell({ children }: { children: ReactNode }) {
-  const { snapshot } = useWorkspace();
+  const { snapshot, demo } = useWorkspace();
   const user = snapshot.user!;
   const router = useRouter();
   const path = usePathname();
@@ -38,7 +38,13 @@ export function DashboardShell({ children }: { children: ReactNode }) {
   const [loggingOut, setLoggingOut] = useState(false);
   const [confirmLogout, setConfirmLogout] = useState(false);
   const [error, setError] = useState("");
-  const accounting = path.includes("bank-transactions");
+  const accounting = [
+    "bank-transactions",
+    "journal-entries",
+    "general-ledger",
+    "chart-of-accounts",
+    "reconciliation",
+  ].some((segment) => path.includes(segment));
   const name = `${user.first_name} ${user.last_name}`.trim();
   async function logout() {
     if (loggingOut) return;
@@ -69,7 +75,9 @@ export function DashboardShell({ children }: { children: ReactNode }) {
             const active =
               item.href === "/dashboard"
                 ? path === item.href
-                : !!item.href && path.startsWith(item.href);
+                : item.label === "Accounting"
+                  ? accounting
+                  : !!item.href && path.startsWith(item.href);
             return (
               <div key={item.label}>
                 {item.href ? (
@@ -112,27 +120,23 @@ export function DashboardShell({ children }: { children: ReactNode }) {
                 )}
                 {item.label === "Accounting" && accounting && (
                   <div className={styles.subnav}>
-                    <Link
-                      href="/dashboard/bank-transactions"
-                      aria-current="page"
-                    >
-                      Bank Transaction
-                    </Link>
                     {[
-                      "Journal Entries",
-                      "General Ledger",
-                      "Chart of Accounts",
-                      "Reconciliation",
-                    ].map((label) => (
-                      <button
-                        key={label}
-                        onClick={() => {
-                          setPending(`${label} is coming next`);
-                          setMobileMenu(false);
-                        }}
+                      ["bank-transactions", "Bank Transaction"],
+                      ["journal-entries", "Journal Entries"],
+                      ["general-ledger", "General Ledger"],
+                      ["chart-of-accounts", "Chart of Accounts"],
+                      ["reconciliation", "Reconciliation"],
+                    ].map(([route, label]) => (
+                      <Link
+                        key={route}
+                        href={`/dashboard/${route}`}
+                        aria-current={
+                          path === `/dashboard/${route}` ? "page" : undefined
+                        }
+                        onClick={() => setMobileMenu(false)}
                       >
                         {label}
-                      </button>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -146,7 +150,10 @@ export function DashboardShell({ children }: { children: ReactNode }) {
     </>
   );
   return (
-    <div className={`${styles.workspace} ${collapsed ? styles.collapsed : ""}`}>
+    <div
+      data-demo-theme={demo.settings.appearance.toLowerCase()}
+      className={`${styles.workspace} ${collapsed ? styles.collapsed : ""}`}
+    >
       <aside className={styles.sidebar}>
         <div className={styles.brand}>
           <Link href="/dashboard" aria-label="CoreOne dashboard">
@@ -225,7 +232,7 @@ export function DashboardShell({ children }: { children: ReactNode }) {
                 <span>{user.email}</span>
                 <button
                   className={styles.textButton}
-                  onClick={() => setPending("View Profile is coming next")}
+                  onClick={() => router.push("/dashboard/settings/account")}
                 >
                   View Profile
                 </button>
@@ -279,10 +286,12 @@ export function DashboardShell({ children }: { children: ReactNode }) {
             <li>
               Individual profile saving, logo upload, and workspace selection.
             </li>
-            <li>Invoice, payment, and note previews and final submission.</li>
             <li>
-              Remaining accounting, invoicing, expenses, reporting,
-              administration, and settings pages.
+              Live invoice delivery, payment allocation, and note previews.
+            </li>
+            <li>
+              Expenses, reporting, administration, and live billing and security
+              services.
             </li>
             <li>
               Live bank authorization, statement processing, and mobile pairing.
