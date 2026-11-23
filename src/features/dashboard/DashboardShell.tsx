@@ -21,7 +21,7 @@ const navigation = [
   },
   { label: "Invoicing", icon: "invoice", href: "/dashboard/invoicing" },
   { label: "Expenses & Bills", icon: "expenses" },
-  { label: "Reporting", icon: "reports" },
+  { label: "Reporting", icon: "reports", href: "/dashboard/reporting" },
   { label: "Administration", icon: "administration" },
   { label: "Settings", icon: "settings", href: "/dashboard/settings" },
 ];
@@ -44,7 +44,7 @@ export function DashboardShell({ children }: { children: ReactNode }) {
     "general-ledger",
     "chart-of-accounts",
     "reconciliation",
-  ].some((segment) => path.includes(segment));
+  ].some((segment) => path.startsWith(`/dashboard/${segment}`));
   const name = `${user.first_name} ${user.last_name}`.trim();
   async function logout() {
     if (loggingOut) return;
@@ -88,7 +88,13 @@ export function DashboardShell({ children }: { children: ReactNode }) {
                     className={`${styles.navItem} ${active ? styles.navActive : ""}`}
                     onClick={() => setMobileMenu(false)}
                   >
-                    <Icon name={item.icon} />
+                    <Icon
+                      name={
+                        item.label === "Reporting" && active
+                          ? "report-nav"
+                          : item.icon
+                      }
+                    />
                     <span>{item.label}</span>
                     {item.label === "Accounting" && (
                       <b className={styles.chevron} aria-hidden="true">
@@ -290,8 +296,8 @@ export function DashboardShell({ children }: { children: ReactNode }) {
               Live invoice delivery, payment allocation, and note previews.
             </li>
             <li>
-              Expenses, reporting, administration, and live billing and security
-              services.
+              Expenses and administration implementation; live billing, security
+              and reporting services.
             </li>
             <li>
               Live bank authorization, statement processing, and mobile pairing.
